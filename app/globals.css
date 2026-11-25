@@ -1,0 +1,400 @@
+@import "tailwindcss";
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #110f20;
+  color: #ffefd6;
+  font:
+    16px/1.45 system-ui,
+    sans-serif;
+}
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+a:focus-visible {
+  outline: 2px solid #ffd184;
+  outline-offset: 3px;
+}
+#world {
+  position: relative;
+  overflow: hidden;
+  min-height: 640px;
+  height: 100svh;
+  isolation: isolate;
+}
+.scrim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent 36%, #130c2282 63%, #100c20dd),
+    linear-gradient(
+      0deg,
+      #0d0b1de0,
+      transparent 23%,
+      transparent 84%,
+      #0c091d99
+    );
+}
+header,
+footer {
+  position: absolute;
+  left: 5vw;
+  right: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header {
+  top: 24px;
+}
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font:
+    600 23px Georgia,
+    serif;
+  letter-spacing: -0.05em;
+}
+.brand i {
+  display: grid;
+  place-items: center;
+  font: 29px Georgia;
+  color: #ffcf86;
+  border: 1px solid #f6b56580;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+#scoreButton,
+.primary,
+.back {
+  border: 1px solid #ead4b369;
+  border-radius: 3px;
+  padding: 9px 15px;
+  background: #17122180;
+}
+.destination {
+  position: absolute;
+  left: 61%;
+  right: 6%;
+  top: 48%;
+  transform: translateY(-50%);
+  animation: arrive 0.7s ease-out both;
+}
+.destination[hidden] {
+  display: none;
+}
+.destination h1 {
+  font:
+    normal clamp(58px, 6.8vw, 116px)/0.91 Georgia,
+    serif;
+  letter-spacing: -0.07em;
+  margin: 0;
+}
+.destination h1:focus {
+  outline: none;
+}
+.destination h1 em {
+  color: #ffd59c;
+  font-weight: 400;
+}
+.destination p {
+  color: #efdbc9;
+  margin: 20px 0 23px;
+}
+#world .destination nav a,
+#topics button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border-block-start: 1px solid #eed1ab63;
+  padding: 13px 6px;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+#world .destination nav a:last-child {
+  border-bottom: 1px solid #eed1ab63;
+}
+.destination nav span {
+  display: block;
+  font: 26px Georgia;
+}
+.destination nav small {
+  display: block;
+  color: #d6c0b5;
+  margin-top: 2px;
+}
+.destination a:hover {
+  background: #f9d19718;
+  transform: translateX(3px);
+}
+.back {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+#topics button {
+  font-size: 17px;
+}
+footer {
+  bottom: 23px;
+  justify-content: flex-start;
+  gap: 15px;
+  color: #dcc5ae;
+  font-size: 13px;
+}
+.map {
+  display: flex;
+  align-items: center;
+}
+.map a {
+  padding: 8px;
+  color: #c69e85;
+}
+.map a[aria-current="page"] {
+  color: #fff0c7;
+  text-shadow: 0 0 8px #ffbf79;
+}
+.map span {
+  width: 22px;
+  height: 1px;
+  background: #8e7567;
+}
+@keyframes arrive {
+  from {
+    opacity: 0;
+    translate: 16px 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@media (max-width: 700px) {
+  #world {
+    height: 100svh;
+    min-height: 700px;
+  }
+  .scrim {
+    background: linear-gradient(
+      0deg,
+      #151020 2%,
+      #191325 33%,
+      #191325cc 42%,
+      transparent 66%
+    );
+  }
+  .destination {
+    left: 7%;
+    right: 7%;
+    top: auto;
+    bottom: 74px;
+    transform: none;
+  }
+  .destination h1 {
+    font-size: clamp(43px, 10vw, 62px);
+  }
+  .destination h1 br {
+    display: none;
+  }
+  .destination h1 em:before {
+    content: " ";
+  }
+  .destination p {
+    margin: 12px 0;
+  }
+  #world .destination nav a {
+    padding: 8px 5px;
+  }
+  .destination nav span {
+    font-size: 22px;
+  }
+  footer {
+    bottom: 15px;
+  }
+  .back {
+    margin-bottom: 10px;
+  }
+  #topics button {
+    padding: 8px;
+  }
+  .brand {
+    font-size: 20px;
+  }
+  header {
+    top: 15px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+#world {
+  --span: max(100vw, 148svh);
+  --position: -1;
+  --ease: cubic-bezier(0.42, 0, 0.18, 1);
+  --trip: 1.45s;
+}
+#world[data-room="quizzes"] {
+  --position: 0;
+}
+#world[data-room="scores"] {
+  --position: -2;
+}
+.terrain {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #080d27;
+  pointer-events: none;
+}
+.panorama,
+.foreground,
+.ignition {
+  position: absolute;
+  height: 100%;
+  left: calc(50% - var(--span) / 2);
+  top: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.panorama,
+.foreground {
+  width: calc(3 * var(--span));
+  transform: translate3d(calc(var(--position) * var(--span)), 0, 0);
+  transition: transform var(--trip) var(--ease);
+  will-change: transform;
+}
+.panorama {
+  background-image: url(/scenery/atlas-world.svg);
+}
+.foreground {
+  background-image: url(/scenery/frontier.svg);
+  transform: translate3d(
+    calc(var(--position) * var(--span) * 1.035 + var(--span) * 0.035),
+    0,
+    0
+  );
+  pointer-events: none;
+}
+.ignition {
+  width: var(--span);
+  display: none;
+}
+.entering .ignition {
+  display: block;
+  background: #000;
+  animation: uncover 2.9s both;
+  background-image: url(/scenery/ignition.svg);
+  background-color: transparent;
+}
+.entering .terrain {
+  background: #000;
+}
+.entering header,
+.entering footer,
+.entering .destination {
+  animation: intro-ui 2.8s both;
+}
+@keyframes uncover {
+  0%,
+  6% {
+    background-color: #000;
+  }
+  7%,
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes intro-ui {
+  0%,
+  58% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.destination {
+  animation: land 0.95s var(--ease) 0.17s both;
+}
+@keyframes land {
+  from {
+    opacity: 0;
+    translate: 0 7px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@media (max-width: 700px) {
+  #world {
+    --span: max(100vw, 93svh);
+  }
+  .terrain {
+    height: 68%;
+    background: #151020;
+  }
+  .panorama,
+  .foreground,
+  .ignition {
+    left: calc(50% - var(--span) * 0.36);
+  }
+  .terrain:after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 22%;
+    background: linear-gradient(transparent, #191325);
+  }
+  #world.entering {
+    background: #000;
+  }
+  .scrim {
+    pointer-events: none;
+  }
+  .entering .scrim {
+    animation: intro-ui 2.8s both;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ignition {
+    display: none !important;
+  }
+  .panorama,
+  .foreground,
+  .destination {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+.back {
+  display: inline-block;
+}
+.map a + a:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 1px;
+  margin-right: 10px;
+  background: #8e7567;
+}
+.destination {
+  animation: none;
+}
+#world:not([data-room="home"]) .destination {
+  animation: land 0.95s var(--ease) both;
+}
