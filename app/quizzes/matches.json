@@ -1,0 +1,473 @@
+{
+  "Series": [
+    {
+      "id": "campus",
+      "title": "Which 3 Idiots character are you?",
+      "sigil": "✎",
+      "color": "#ffc984",
+      "questions": [
+        {
+          "prompt": "You spot free food at a wedding you weren't invited to. What’s your move?",
+          "choices": [
+            "Walk straight up to the buffet like you own the venue, then casually shake hands with the groom's uncle.",
+            "Overthink at the entrance for 10 minutes before sneaking in behind your loudest friend.",
+            "Load your plate, then instantly panic that you'll end up on the evening news.",
+            "Corner the bride’s dad to deliver a 5-minute speech on his impeccable catering ROI."
+          ]
+        },
+        {
+          "prompt": "Your boss or professor announces a \"surprise\" test or review at 8:00 AM. You:",
+          "choices": [
+            "Raise your hand and ask them to define the word \"surprise\" until they cancel it out of sheer frustration.",
+            "Smile politely on the outside while quietly narrating your own tragic backstory in your head.",
+            "Kiss every lucky ring on your fingers and bargain with the universe for one more day.",
+            "Turn around and flash an evil grin because you memorized the entire manual at 3:00 AM."
+          ]
+        },
+        {
+          "prompt": "Someone insults your best friend in front of a crowd. How do you handle it?",
+          "choices": [
+            "Humiliate them with a weirdly specific science experiment or a devastatingly calm roast.",
+            "Pull everyone aside for a heartfelt monologue with imaginary sad background music.",
+            "Look terrified at first, then immediately throw hands anyway because loyalty comes first.",
+            "Try to defend your friend using big words you don't understand, making everything ten times worse."
+          ]
+        },
+        {
+          "prompt": "Life is falling apart and nothing makes sense. What is your coping mechanism?",
+          "choices": [
+            "Take apart a perfectly working household appliance just to feel something.",
+            "Type a dramatic, life-changing confession text, stare at it for an hour, and delete it.",
+            "Sit on a rooftop contemplating your life choices while waiting for a miracle.",
+            "Stare at your old trophies and certificates to remind yourself that you’re still better than everyone else."
+          ]
+        },
+        {
+          "prompt": "Be honest: what is your biggest toxic trait?",
+          "choices": [
+            "Giving unsolicited life advice like you’re a wandering monk with an engineering degree.",
+            "Fixing everyone else’s problems while completely ignoring your own dumpster fire.",
+            "Treating every minor inconvenience like a certified apocalypse.",
+            "Bragging endlessly and having zero self-awareness when everyone is roasting you behind your back."
+          ]
+        }
+      ],
+      "results": [
+        {
+          "name": "Rancho",
+          "description": "Curiosity comes first. You would take the machine apart before looking for its manual.",
+          "art": [
+            "🔧",
+            "💡"
+          ]
+        },
+        {
+          "name": "Farhan",
+          "description": "You notice the story behind the chaos, especially when a friend needs you.",
+          "art": [
+            "📷",
+            "🌄"
+          ]
+        },
+        {
+          "name": "Raju",
+          "description": "You feel every risk deeply and still show up for the people you love.",
+          "art": [
+            "💍",
+            "🙏"
+          ]
+        },
+        {
+          "name": "Chatur",
+          "description": "You came prepared, memorized the speech, and have the certificates to prove it.",
+          "art": [
+            "🏆",
+            "📚"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "castle",
+      "title": "Which Hogwarts house do you belong to?",
+      "sigil": "✦",
+      "color": "#c6b1fb",
+      "questions": [
+        {
+          "prompt": "There’s a giant, glowing door labeled \"DO NOT OPEN: CERTAIN DEATH.\" What’s your move?",
+          "choices": [
+            "Kick it open immediately without checking if anyone is backing you up.",
+            "Pick the lock, see what's inside, and quietly use it as leverage later.",
+            "Stand there for 20 minutes analyzing the ancient runes on the doorknob before touching it.",
+            "Put a sticky note over the warning that says \"Free snacks inside\" just to see what happens."
+          ]
+        },
+        {
+          "prompt": "Your group chat is planning a trip, and everything is falling apart. Who are you?",
+          "choices": [
+            "The one booking non-refundable flights at 2:00 AM and yelling \"We’ll figure it out when we land!\"",
+            "The mastermind who secretly booked the best room for yourself three weeks ago.",
+            "The human spreadsheet calculating split expenses down to the exact decimal.",
+            "The emotional support friend bringing snacks, band-aids, and zero actual itinerary."
+          ]
+        },
+        {
+          "prompt": "Someone steals your lunch from the shared fridge. How do you retaliate?",
+          "choices": [
+            "Call a dramatic all-hands meeting and challenge the thief to a duel in the parking lot.",
+            "Find out who did it, ruin their reputation over six months, and make it look like an accident.",
+            "Replace your lunch with something aggressively spicy and document the results like a science fair project.",
+            "Feel weirdly bad that they were hungry, then bake cookies for everyone tomorrow anyway."
+          ]
+        },
+        {
+          "prompt": "You’re given a magical invisibility cloak for 24 hours. Be honest—what are you actually doing?",
+          "choices": [
+            "Sneaking into a restricted VIP area purely for the adrenaline rush.",
+            "Eavesdropping on your boss or rivals to gather top-tier blackmail.",
+            "Breaking into a closed museum or library so nobody interrupts your peace and quiet.",
+            "Spooking your friends in the kitchen and stealing fries straight off their plates."
+          ]
+        },
+        {
+          "prompt": "What is your biggest red flag?",
+          "choices": [
+            "Zero impulse control—your brain says \"bad idea,\" and your body is already doing it.",
+            "Holding a grudge since 2016 and treating minor board games like warfare.",
+            "Saying \"Well, technically...\" in arguments until everyone leaves the room.",
+            "Being dangerously loyal to people who definitely don't deserve your snacks."
+          ]
+        }
+      ],
+      "results": [
+        {
+          "name": "Gryffindor",
+          "description": "You go first. Working out the landing can wait.",
+          "art": [
+            "🦁",
+            "⚔️"
+          ]
+        },
+        {
+          "name": "Slytherin",
+          "description": "You spot the opening and already have a plan for what comes next.",
+          "art": [
+            "🐍",
+            "🗝️"
+          ]
+        },
+        {
+          "name": "Ravenclaw",
+          "description": "A locked door is just a particularly interesting question.",
+          "art": [
+            "🦅",
+            "📖"
+          ]
+        },
+        {
+          "name": "Hufflepuff",
+          "description": "You remember who needs a snack, a seat, or someone on their side.",
+          "art": [
+            "🦡",
+            "🌿"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radio",
+      "title": "Which Pakistani OST are you?",
+      "sigil": "♫",
+      "color": "#91dbcb",
+      "questions": [
+        {
+          "prompt": "Someone leaves you on \"Seen\" for 6 hours, then texts \"Sorry busy tha.\" Your move?",
+          "choices": [
+            "Reply \"No worries 😊\" while silently adding them to your mental hit-list until 2034.",
+            "Stare at the ceiling at 3:00 AM wondering if you’re actually the villain in everyone’s story.",
+            "Leave them on \"Seen\" for 3 business days, post a thirst trap/aesthetic coffee story, and reply \"Omg just saw this!!\"",
+            "Immediately send 14 memes in a row because you have zero self-respect and short-term memory loss."
+          ]
+        },
+        {
+          "prompt": "You get invited to a cousin's wedding where you know for a fact everyone is going to judge your life choices. How do you pull up?",
+          "choices": [
+            "Dressed like you’re about to announce a hostile takeover of the family business.",
+            "Looking tired, underdressed, and ready to slip out the back door right after the naan hits the table.",
+            "Smiling politely at every auntie while mentally calculating how many minutes until you can go home and take off your shoes.",
+            "Starting fake drama between two random uncles just to keep yourself entertained."
+          ]
+        },
+        {
+          "prompt": "Your bank account hits Rs. 430 on the 18th of the month. What is your survival strategy?",
+          "choices": [
+            "Still order iced coffee/loaded fries because \"paise toh haath ki mail hain.\"",
+            "Walk around the house turning off fans and acting like a stressed-out 1990s PTV dad.",
+            "Convince your friend to pay by saying \"Bro Easypaisa down hai, ghar ja ke bhejta hoon\" (you will never send it).",
+            "Stare into the fridge 12 times expecting biryani to magically spawn."
+          ]
+        },
+        {
+          "prompt": "Someone tries to give you unsolicited life advice at a family dinner. You:",
+          "choices": [
+            "Hit them with \"Ji bilkul, aap sahi keh rahe hain\" and immediately do the exact opposite.",
+            "Look them dead in the eye and ask a question about their own failed life choices so they panic and leave.",
+            "Nod respectfully on the outside while your soul leaves your body and floats toward the ceiling.",
+            "Somehow turn the conversation into an argument about cricket or politics so everyone forgets about you."
+          ]
+        },
+        {
+          "prompt": "Be honest—what is your actual red flag?",
+          "choices": [
+            "You create fake scenarios in your head, get mad at people for what they did in your imagination, and ruin your own mood.",
+            "You act completely unbothered until someone mildly inconveniences you, then you act like a Victorian orphan.",
+            "You have 47 unfinished hobbies, 3,000 unread WhatsApp messages, and zero sense of urgency.",
+            "You laugh at the worst possible moments—funerals, serious talks, someone crying—your brain just glitches"
+          ]
+        }
+      ],
+      "results": [
+        {
+          "name": "Khaani (\"Tumhein Dillagi\")",
+          "description": "Petty, stubborn, and powered entirely by spite—you will ruin your own sleep schedule just to prove a point.",
+          "art": [
+            "🌹",
+            "🔥"
+          ]
+        },
+        {
+          "name": "Parizaad",
+          "description": "Zero luck, maximum overthinking, and permanently stuck feeling like an unpaid extra in your own life.",
+          "art": [
+            "🌙",
+            "🪶"
+          ]
+        },
+        {
+          "name": "Zindagi Gulzar Hai",
+          "description": "Tired of everyone’s nonsense, allergies to fake people, and secretly judging the entire room while drinking chai.",
+          "art": [
+            "☕",
+            "🌸"
+          ]
+        },
+        {
+          "name": "Suno Chanda",
+          "description": "Walking hazard with zero filter—you treat serious life crises like a comedy sketch and somehow survive anyway.",
+          "art": [
+            "📻",
+            "🎉"
+          ]
+        }
+      ]
+    }
+  ],
+  "Personality": [
+    {
+      "id": "mental-age",
+      "title": "Can we guess your mental age?",
+      "sigil": "☾",
+      "color": "#d4bcf7",
+      "questions": [
+        {
+          "prompt": "You’re buying a new shirt or jacket. Which one are you picking?",
+          "choices": [
+            "Tight/fitted trendy cut that looks great today, even if it shrinks next month.",
+            "Slightly oversized \"taake 3 saal baad bhi poori aaye\" (and with dark colors so stains don’t show).",
+            "Nothing—you’re still wearing the faded, stretched-out shirt from 2018 as your official \"ghar ke kapray.\"",
+            "Literally whatever is on 50% clearance sale, regardless of style."
+          ]
+        },
+        {
+          "prompt": "You just finished dinner at a restaurant and there’s half a bottle of mineral water left on the table. What’s your move?",
+          "choices": [
+            "Leave it there without a second thought.",
+            "Take a quick sip before standing up, then leave it.",
+            "Pick it up and put it in your bag/car because \"paise diye hain, zaya kyun karein?\"",
+            "Take the bottle home, refill it with tap water, and keep it in the fridge for the next 6 months."
+          ]
+        },
+        {
+          "prompt": "You finish a fancy metal biscuit tin or an ice cream tub. What happens to it?",
+          "choices": [
+            "Goes straight in the bin.",
+            "Used as a temporary trash bowl for peanut shells while watching TV, then thrown out.",
+            "Washed, dried, and officially becomes the new container for daal, leftover salan, or tea leaves.",
+            "Promoted to holding needles, threads, buttons, and 14 expired safety pins."
+          ]
+        },
+        {
+          "prompt": "You’re going on a 2-hour road trip or flight. What are you packing?",
+          "choices": [
+            "Just your phone, charger, and vibes—you’ll buy snacks on the way.",
+            "A whole bag of home-cooked parathas, boiled eggs, and fruit so you don't have to buy \"mehnga bahar ka khana.\"",
+            "A thermos of chai, Vicks VapoRub, Panadol, and an extra shawl \"just in case AC zyada tez ho.\"",
+            "Headphones and a neck pillow so nobody talks to you the entire time."
+          ]
+        },
+        {
+          "prompt": "Someone leaves the room for 5 minutes and forgets to turn off the fan or light. You:",
+          "choices": [
+            "Don't even notice it’s on.",
+            "Turn it off quietly when you walk past.",
+            "Turn it off immediately and yell across the house: \"Bijli ka bill tumhara baap bharega?!\"",
+            "Stand by the doorway counting how many rupees of electricity are being wasted per minute."
+          ]
+        }
+      ],
+      "results": [
+        {
+          "name": "Teen spirit",
+          "description": "You live in the moment, trust your taste, and figure out tomorrow when it arrives.",
+          "art": [
+            "🛹",
+            "🎧"
+          ]
+        },
+        {
+          "name": "Twenty-something planner",
+          "description": "You like a little independence and a backup plan, especially when snacks are involved.",
+          "art": [
+            "🎒",
+            "🗺️"
+          ]
+        },
+        {
+          "name": "The family grown-up",
+          "description": "You remember the water bottle, the electricity bill, and the things everyone else forgets.",
+          "art": [
+            "🫖",
+            "🏠"
+          ]
+        },
+        {
+          "name": "Old soul",
+          "description": "You see the second life in a biscuit tin and know the value of a quiet afternoon.",
+          "art": [
+            "🧵",
+            "🕰️"
+          ]
+        }
+      ],
+      "matchKeys": [
+        [
+          0,
+          2,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          2,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "flags",
+      "title": "Are you a red flag or a green flag?",
+      "sigil": "⚑",
+      "color": "#a6d7bf",
+      "questions": [
+        {
+          "prompt": "Someone you don’t feel like talking to texts you right as you open WhatsApp. What do you choose?",
+          "choices": [
+            "Reply politely right away so they aren't left hanging.",
+            "Read it from the notification bar, turn off your Wi-Fi immediately, and pretend your phone died.",
+            "Leave them on \"Seen\" on WhatsApp while actively liking memes on Instagram.",
+            "Turn off read receipts, ignore them for 4 days, and reply \"Omg sorry network issue tha\" when you need a favor."
+          ]
+        },
+        {
+          "prompt": "You’re picking a small gift for someone you like. Which one are you choosing?",
+          "choices": [
+            "Classic red flowers and their favorite chocolate—pure, genuine, zero mind games.",
+            "A cursed meme printed on a mug because romantic gestures make you cringe.",
+            "Red flowers, after ghosting them for two days just to keep them on their toes (classic Zamil move).",
+            "Literally nothing—you’ll just show up and say \"Meri presence hi kaafi hai.\""
+          ]
+        },
+        {
+          "prompt": "You’re walking past a mirror or reflective car window in public. What do you choose to do?",
+          "choices": [
+            "Walk right past like a normal person.",
+            "Do a quick, subtle hair check without breaking your stride.",
+            "Full stop, fix your hair/outfit for 10 seconds, and admire yourself like the main character.",
+            "Adjust your black shalwar kameez and practice your dramatic Zamil stare just in case someone is watching."
+          ]
+        },
+        {
+          "prompt": "You’re on a call with someone who is telling a long, boring story. Which move do you choose?",
+          "choices": [
+            "Listen patiently and ask follow-up questions like an actual green flag.",
+            "Put the phone on speaker, mute yourself, and scroll TikTok while saying \"Haan... sahi... bilkul\" every 30 seconds.",
+            "Put your phone in airplane mode mid-sentence so it says \"Call Failed\" instead of \"Call Ended.\"",
+            "Interrupt them to turn the conversation back to your own problems."
+          ]
+        },
+        {
+          "prompt": "Which late-night phone habit are you choosing tonight?",
+          "choices": [
+            "Wishing everyone goodnight and actually going to sleep before midnight.",
+            "Putting your phone on Do Not Disturb while watching 300 reels in silence.",
+            "Posting a cryptic sad quote on your Close Friends story with only ONE person in the list.",
+            "Stalking someone’s profile from 2019, accidentally liking a photo, and immediately deactivating your account."
+          ]
+        }
+      ],
+      "results": [
+        {
+          "name": "Certified Abu Bakr (Pure Green Flag)",
+          "description": "Genuinely thoughtful, brings red flowers without the trauma, and never fakes a Wi-Fi outage.",
+          "art": [
+            "🌹",
+            "🌿"
+          ]
+        },
+        {
+          "name": "Chaotic Beige Flag (Sneaky Introvert)",
+          "description": "Not toxic, just allergic to phone calls—you live on Airplane Mode and DND, \"par dil ke ache ho.\"",
+          "art": [
+            "🎧",
+            "☁️"
+          ]
+        },
+        {
+          "name": "Peak Zamil (Certified Red Flag)",
+          "description": "Master of hot-and-cold mind games—will bring red roses one day and disappear into thin air the next.",
+          "art": [
+            "🚩",
+            "🌹"
+          ]
+        },
+        {
+          "name": "Menace to Society (Walking Hazard)",
+          "description": "Unhinged, petty, and treating basic communication like a high-stakes espionage mission.",
+          "art": [
+            "⚡",
+            "🌪️"
+          ]
+        }
+      ]
+    }
+  ]
+}

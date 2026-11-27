@@ -1,3 +1,4 @@
+import EducationScorebook from "../quizzes/education/Summary";
 import Link from "next/link";
 
 export const metadata = {
@@ -16,7 +17,7 @@ export default function ScoresPage() {
         <br />
         <em>Observatory</em>
       </h1>
-      <p>Your scorebook is empty. Completed quizzes will appear here.</p>
+      <EducationScorebook />
     </>
   );
 }
