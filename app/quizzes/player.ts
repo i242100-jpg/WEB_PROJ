@@ -19,3 +19,15 @@ export function createPlayer(name: string): Player {
   return player;
 }
 export function scoreKey(kind: string, id: string, playerId: string) { return `quiz-atlas:v2:${playerId}:${kind}:${id}`; }
+
+export function renamePlayer(id: string, name: string): Player {
+  const clean = name.trim();
+  if (clean.length < 2 || clean.length > 40) throw new Error('Enter a name between 2 and 40 characters.');
+  const players = readPlayers();
+  const current = players.find(p => p.id === id);
+  if (!current) throw new Error('Unknown profile.');
+  if (players.some(p => p.id !== id && p.name.toLowerCase() === clean.toLowerCase())) throw new Error('This name already exists.');
+  const updated = { ...current, name: clean };
+  localStorage.setItem(playersKey, JSON.stringify(players.map(p => p.id === id ? updated : p)));
+  return updated;
+}
