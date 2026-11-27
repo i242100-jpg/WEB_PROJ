@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import GKPerformance from "@/components/GKPerformance";
 import { useEffect, useState } from "react";
 import { gkTopics, readGK, type GKRecord } from "../gkRecord";
 import {readPlayer, type Player} from "../player";
@@ -43,7 +44,6 @@ export default function EducationScorebook() {
   }, []);
   const completed = gkTopics.filter(topic => gk[topic.id] !== undefined);
   const earned = completed.reduce((n, topic) => n + gk[topic.id], 0);
-  const attempted = completed.reduce((n, topic) => n + topic.questions.length, 0);
   const available = gkTopics.reduce((n, topic) => n + topic.questions.length, 0);
   const { records } = useRecords();
   return <><style>{`
@@ -130,12 +130,8 @@ export default function EducationScorebook() {
       <h2>General Knowledge</h2>
       {completed.length ? <>
         <strong>◈ {earned} / {available} coins</strong>
-        <p>{earned} correct · {attempted - earned} incorrect across completed quizzes</p>
-        <ul>{gkTopics.map(topic => <li key={topic.id}>
-          <span>{topic.title}</span>
-          <b>{gk[topic.id] === undefined ? "Unplayed" : gk[topic.id] + " / " + topic.questions.length}</b>
-        </li>)}</ul>
       </> : <p>Complete a General Knowledge quiz to record your first result.</p>}
+      <GKPerformance scores={gk}/>
       <Link className="back" href="/quizzes">Open the Archive →</Link>
     </section></>}</>;
 }
