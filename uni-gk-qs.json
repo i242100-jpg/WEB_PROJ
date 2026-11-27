@@ -1,0 +1,2477 @@
+{
+  "project": "FAST-NUCES Islamabad Quiz App",
+  "language": "English",
+  "quiz_banks": [
+    {
+      "id": "gpa_guess",
+      "title": "I Will Guess Your GPA",
+      "type": "personality_prediction",
+      "description": "A FAST Islamabad survival-based GPA prediction quiz. The result is for fun, not an actual academic prediction.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Your PF assignment is due at 11:59 PM. It is currently 11:42 PM. What are you doing?",
+          "options": [
+            {
+              "text": "Submitted yesterday. I fear no deadline.",
+              "score": 4
+            },
+            {
+              "text": "Testing the final version and checking the submission.",
+              "score": 3
+            },
+            {
+              "text": "Finishing the last few functions.",
+              "score": 2
+            },
+            {
+              "text": "Why is the compiler showing 17 errors?",
+              "score": 1
+            },
+            {
+              "text": "I thought the deadline was tomorrow.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Your instructor announces a surprise quiz. Your reaction?",
+          "options": [
+            {
+              "text": "Finally, a chance to secure marks.",
+              "score": 4
+            },
+            {
+              "text": "I revised this topic last night.",
+              "score": 3
+            },
+            {
+              "text": "I remember attending this lecture.",
+              "score": 2
+            },
+            {
+              "text": "Does attendance count as preparation?",
+              "score": 1
+            },
+            {
+              "text": "Surprise? I have not even opened the slides.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Your group project has four members. How many are actually working?",
+          "options": [
+            {
+              "text": "All four. We have a functioning team.",
+              "score": 4
+            },
+            {
+              "text": "Three. One member is mostly on moral support.",
+              "score": 3
+            },
+            {
+              "text": "Two. We have accepted our fate.",
+              "score": 2
+            },
+            {
+              "text": "Me and the deadline.",
+              "score": 1
+            },
+            {
+              "text": "The group chat has been silent for 11 days.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "You have a two-hour gap between classes at H-11. What happens?",
+          "options": [
+            {
+              "text": "Library or productive work session.",
+              "score": 4
+            },
+            {
+              "text": "Finish an assignment and revise notes.",
+              "score": 3
+            },
+            {
+              "text": "Food, friends, and a little studying.",
+              "score": 2
+            },
+            {
+              "text": "Sit somewhere and scroll until the next class.",
+              "score": 1
+            },
+            {
+              "text": "I blinked and the entire gap disappeared.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "You open your LMS and see your sessional marks. What is your first move?",
+          "options": [
+            {
+              "text": "Calculate my course grade immediately.",
+              "score": 4
+            },
+            {
+              "text": "Compare them with my expected marks.",
+              "score": 3
+            },
+            {
+              "text": "Check whether I passed.",
+              "score": 2
+            },
+            {
+              "text": "Close the tab and process my emotions.",
+              "score": 1
+            },
+            {
+              "text": "I am not emotionally prepared to see that number.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Your code works perfectly on your laptop but fails during the lab demo. What do you do?",
+          "options": [
+            {
+              "text": "Debug calmly. I know exactly what changed.",
+              "score": 4
+            },
+            {
+              "text": "Check paths, compiler settings, and dependencies.",
+              "score": 3
+            },
+            {
+              "text": "Restart the program and hope for the best.",
+              "score": 2
+            },
+            {
+              "text": "Explain that it worked at home.",
+              "score": 1
+            },
+            {
+              "text": "The code has chosen this moment to betray me.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "How early do you start preparing for finals?",
+          "options": [
+            {
+              "text": "Weeks before. I like peace.",
+              "score": 4
+            },
+            {
+              "text": "About a week before.",
+              "score": 3
+            },
+            {
+              "text": "A few days before.",
+              "score": 2
+            },
+            {
+              "text": "When the class group starts panicking.",
+              "score": 1
+            },
+            {
+              "text": "I believe in academic miracles.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Your friend asks, 'Are you prepared for the exam?'",
+          "options": [
+            {
+              "text": "Yes. Want to revise together?",
+              "score": 4
+            },
+            {
+              "text": "Mostly. A few topics are left.",
+              "score": 3
+            },
+            {
+              "text": "I know some things. Hopefully enough.",
+              "score": 2
+            },
+            {
+              "text": "Don't ask questions you don't want answers to.",
+              "score": 1
+            },
+            {
+              "text": "Which exam?",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "result_calculation": {
+        "method": "sum",
+        "max_score": 32,
+        "ranges": [
+          {
+            "min": 28,
+            "max": 32,
+            "result": "4.00 GPA energy",
+            "description": "You have your notes organised, your assignments submitted, and your sleep schedule under control. Are you even enrolled at FAST?"
+          },
+          {
+            "min": 23,
+            "max": 27,
+            "result": "3.50–3.99 GPA energy",
+            "description": "Consistent, capable, and usually prepared. You know how to survive the RAGRA without becoming part of it."
+          },
+          {
+            "min": 17,
+            "max": 22,
+            "result": "3.00–3.49 GPA energy",
+            "description": "You are doing reasonably well, but there is always one course trying to humble you."
+          },
+          {
+            "min": 10,
+            "max": 16,
+            "result": "2.00–2.99 GPA energy",
+            "description": "You and your deadlines have a complicated relationship. Time management might be your next FYP."
+          },
+          {
+            "min": 0,
+            "max": 9,
+            "result": "Below 2.00 GPA energy",
+            "description": "At this point, you are not studying Computer Science. You are conducting an experiment on academic survival."
+          }
+        ]
+      }
+    },
+    {
+      "id": "fyp_supervisor",
+      "title": "Which FYP Supervisor Should You Pick?",
+      "type": "technical_interest_matching",
+      "description": "Match your technical interests to faculty members using the research areas specified in their supplied profiles. This is a research-interest match, not a claim about teaching style, supervision quality, or availability.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which project would you genuinely enjoy working on?",
+          "options": [
+            {
+              "text": "An AI system that learns patterns and makes intelligent decisions.",
+              "tags": [
+                "ai_ml",
+                "computational_intelligence"
+              ]
+            },
+            {
+              "text": "A system that detects cyberattacks and protects networks.",
+              "tags": [
+                "cybersecurity",
+                "network_security"
+              ]
+            },
+            {
+              "text": "A secure IoT or cloud-based system.",
+              "tags": [
+                "iot",
+                "cloud",
+                "network_security"
+              ]
+            },
+            {
+              "text": "A blockchain-based application or secure digital platform.",
+              "tags": [
+                "blockchain",
+                "cryptography"
+              ]
+            },
+            {
+              "text": "A language-based AI assistant or generative AI application.",
+              "tags": [
+                "nlp",
+                "generative_ai",
+                "deep_learning"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Which technical problem sounds most interesting?",
+          "options": [
+            {
+              "text": "Detecting malware that keeps changing to avoid detection.",
+              "tags": [
+                "malware_analysis",
+                "deep_learning",
+                "cybersecurity"
+              ]
+            },
+            {
+              "text": "Making a network more secure and efficient.",
+              "tags": [
+                "network_security",
+                "networks",
+                "iot"
+              ]
+            },
+            {
+              "text": "Designing privacy-preserving authentication.",
+              "tags": [
+                "cryptography",
+                "privacy",
+                "authentication"
+              ]
+            },
+            {
+              "text": "Training a model to understand or generate human language.",
+              "tags": [
+                "nlp",
+                "generative_ai",
+                "machine_learning"
+              ]
+            },
+            {
+              "text": "Building intelligent systems for autonomous machines or smart environments.",
+              "tags": [
+                "robotics",
+                "machine_vision",
+                "smart_cities"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Choose the area you would most like to research.",
+          "options": [
+            {
+              "text": "Artificial Intelligence and Machine Learning.",
+              "tags": [
+                "ai_ml",
+                "deep_learning"
+              ]
+            },
+            {
+              "text": "Cybersecurity and digital forensics.",
+              "tags": [
+                "cybersecurity",
+                "digital_forensics",
+                "malware_analysis"
+              ]
+            },
+            {
+              "text": "Computer networks and Internet of Things.",
+              "tags": [
+                "networks",
+                "iot",
+                "cloud"
+              ]
+            },
+            {
+              "text": "Cryptography, privacy, and secure protocols.",
+              "tags": [
+                "cryptography",
+                "privacy",
+                "authentication"
+              ]
+            },
+            {
+              "text": "Blockchain and decentralised technologies.",
+              "tags": [
+                "blockchain"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "What kind of data or system would you prefer working with?",
+          "options": [
+            {
+              "text": "Network traffic, system logs, and attack patterns.",
+              "tags": [
+                "network_security",
+                "intrusion_detection",
+                "malware_analysis"
+              ]
+            },
+            {
+              "text": "Text, documents, and language datasets.",
+              "tags": [
+                "nlp",
+                "generative_ai"
+              ]
+            },
+            {
+              "text": "IoT devices, sensors, and cloud infrastructure.",
+              "tags": [
+                "iot",
+                "cloud",
+                "networks"
+              ]
+            },
+            {
+              "text": "Images, video, and visual information.",
+              "tags": [
+                "machine_vision",
+                "deep_learning",
+                "robotics"
+              ]
+            },
+            {
+              "text": "Encrypted information, identities, and secure transactions.",
+              "tags": [
+                "cryptography",
+                "privacy",
+                "blockchain"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Which outcome would make you most proud of your FYP?",
+          "options": [
+            {
+              "text": "A model that achieves strong performance on a difficult prediction task.",
+              "tags": [
+                "ai_ml",
+                "deep_learning",
+                "computational_intelligence"
+              ]
+            },
+            {
+              "text": "A security tool that detects or prevents real attacks.",
+              "tags": [
+                "cybersecurity",
+                "intrusion_detection",
+                "malware_analysis"
+              ]
+            },
+            {
+              "text": "A secure and scalable connected system.",
+              "tags": [
+                "iot",
+                "cloud",
+                "networks"
+              ]
+            },
+            {
+              "text": "A new privacy-preserving or authentication mechanism.",
+              "tags": [
+                "cryptography",
+                "privacy",
+                "authentication"
+              ]
+            },
+            {
+              "text": "An intelligent application that understands language or generates useful content.",
+              "tags": [
+                "nlp",
+                "generative_ai"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Pick a research challenge.",
+          "options": [
+            {
+              "text": "Making AI models more accurate, robust, and explainable.",
+              "tags": [
+                "ai_ml",
+                "deep_learning",
+                "computational_intelligence"
+              ]
+            },
+            {
+              "text": "Detecting intrusions and advanced cyber threats.",
+              "tags": [
+                "cybersecurity",
+                "intrusion_detection",
+                "network_security"
+              ]
+            },
+            {
+              "text": "Securing communication between connected devices.",
+              "tags": [
+                "iot",
+                "networks",
+                "cryptography"
+              ]
+            },
+            {
+              "text": "Protecting data and identity in digital environments.",
+              "tags": [
+                "privacy",
+                "cryptography",
+                "authentication"
+              ]
+            },
+            {
+              "text": "Understanding images or enabling autonomous decision-making.",
+              "tags": [
+                "machine_vision",
+                "robotics",
+                "ai_ml"
+              ]
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "method": "count_matching_tags",
+        "instruction": "Add one point to a faculty member for every selected answer tag that matches one of their research tags. Return the highest-scoring faculty members. If there is a tie, show all tied matches."
+      },
+      "faculty_results": [
+        {
+          "name": "Dr. Hasan Mujtaba",
+          "research_tags": [
+            "ai_ml",
+            "computational_intelligence",
+            "machine_learning",
+            "data_mining",
+            "knowledge_discovery",
+            "evolutionary_gaming",
+            "machine_vision",
+            "robotics"
+          ],
+          "research_areas": [
+            "Artificial Intelligence",
+            "Computational Intelligence",
+            "Machine Learning",
+            "Data Mining and Knowledge Discovery",
+            "Evolutionary Gaming",
+            "Machine Vision",
+            "Robotics"
+          ],
+          "match_message": "Your interests lean towards AI, computational intelligence, machine learning, or intelligent visual and robotic systems."
+        },
+        {
+          "name": "Dr. Qaisar Shafi",
+          "research_tags": [
+            "cybersecurity",
+            "ai_ml",
+            "intrusion_detection",
+            "secure_algorithms",
+            "cloud",
+            "fog_computing",
+            "iot",
+            "blockchain",
+            "software_defined_networking",
+            "network_security"
+          ],
+          "research_areas": [
+            "Cybersecurity",
+            "AI-based Secure Systems",
+            "Intrusion Detection Systems",
+            "Secure and Computational Algorithms",
+            "Cloud and Fog Computing",
+            "IoT",
+            "Blockchain",
+            "Software Defined Networking"
+          ],
+          "match_message": "Your interests combine cybersecurity with AI, networks, cloud, IoT, or blockchain."
+        },
+        {
+          "name": "Dr. Muhammad Asim",
+          "research_tags": [
+            "network_security",
+            "cloud",
+            "ai_ml",
+            "iot",
+            "blockchain",
+            "wireless_sensor_networks",
+            "cybersecurity"
+          ],
+          "research_areas": [
+            "Network Security",
+            "Cloud Security",
+            "Applied AI and Machine Learning",
+            "IoT Security",
+            "Blockchain",
+            "Wireless Sensor Networks"
+          ],
+          "match_message": "Your interests fit applied AI, cloud security, IoT security, blockchain, or network-based research."
+        },
+        {
+          "name": "Dr. Subhan Ullah",
+          "research_tags": [
+            "cryptography",
+            "lightweight_cryptography",
+            "data_security",
+            "ai_ml",
+            "intrusion_detection",
+            "cloud",
+            "iot"
+          ],
+          "research_areas": [
+            "Lightweight Cryptographic Solutions",
+            "Data Security",
+            "Machine Learning-based Intrusion Detection",
+            "Cloud and IoT Security"
+          ],
+          "match_message": "Your interests point towards lightweight cryptography, data protection, or ML-based security for cloud and IoT."
+        },
+        {
+          "name": "Dr. Zafar Iqbal Abbasi",
+          "research_tags": [
+            "autonomous_vehicle_security",
+            "smart_cities",
+            "apt",
+            "threat_modeling",
+            "android_security",
+            "malware_analysis",
+            "manet",
+            "cybersecurity"
+          ],
+          "research_areas": [
+            "Autonomous Vehicle Security",
+            "Smart Cities",
+            "Advanced Persistent Threats",
+            "Threat Modeling",
+            "Android Security",
+            "Malware Analysis",
+            "Mobile Ad Hoc Networks"
+          ],
+          "match_message": "Your interests fit threat modelling, mobile security, malware, smart cities, or autonomous vehicle security."
+        },
+        {
+          "name": "Dr. Sana Aurangzeb",
+          "research_tags": [
+            "malware_analysis",
+            "deep_learning",
+            "cybersecurity",
+            "ransomware",
+            "android_malware",
+            "machine_learning"
+          ],
+          "research_areas": [
+            "Malware Analysis",
+            "Deep Learning",
+            "Security Services",
+            "Ransomware Classification",
+            "Android Malware Analysis"
+          ],
+          "match_message": "Your interests fit malware detection, ransomware analysis, Android security, and deep learning for cybersecurity."
+        },
+        {
+          "name": "Mr. Jawad Hassan Nisar",
+          "research_tags": [
+            "networks",
+            "network_security",
+            "iot",
+            "wireless_sensor_networks",
+            "vulnerability_assessment",
+            "malware_analysis",
+            "adversarial_ml",
+            "explainable_ml",
+            "cybersecurity"
+          ],
+          "research_areas": [
+            "Computer Networks",
+            "Network Security",
+            "IoT",
+            "Wireless Sensor Networks",
+            "Vulnerability Assessment and Management",
+            "Malware Analysis",
+            "Adversarial and Explainable Machine Learning"
+          ],
+          "match_message": "Your interests fit network security, IoT, vulnerability assessment, malware analysis, or explainable and adversarial ML."
+        },
+        {
+          "name": "Dr. Hina Binte Haq",
+          "research_tags": [
+            "blockchain",
+            "cryptocurrency",
+            "cryptography",
+            "machine_learning",
+            "election_security"
+          ],
+          "research_areas": [
+            "Blockchain",
+            "Cryptocurrency",
+            "Cryptography",
+            "Machine Learning",
+            "Election Security"
+          ],
+          "match_message": "Your interests fit blockchain, cryptography, cryptocurrency, machine learning, or election security."
+        },
+        {
+          "name": "Mr. Mehmood ul Hassan",
+          "research_tags": [
+            "cryptography",
+            "digital_forensics",
+            "metaverse_security",
+            "privacy",
+            "authentication",
+            "searchable_encryption",
+            "privacy_preserving_data"
+          ],
+          "research_areas": [
+            "Applied Cryptography",
+            "Digital Forensics",
+            "Metaverse Security and Privacy",
+            "Authentication Protocols",
+            "Searchable Encryption",
+            "Privacy-Preserving Data Sharing"
+          ],
+          "match_message": "Your interests fit applied cryptography, digital forensics, authentication, or privacy-preserving systems."
+        },
+        {
+          "name": "Ms. Sadia Saad",
+          "research_tags": [
+            "nlp",
+            "deep_learning",
+            "machine_unlearning",
+            "generative_ai",
+            "language_models"
+          ],
+          "research_areas": [
+            "Natural Language Processing",
+            "Deep Learning",
+            "Machine Unlearning",
+            "Generative AI",
+            "Language Models"
+          ],
+          "match_message": "Your interests fit NLP, generative AI, deep learning, or machine unlearning in language models."
+        },
+        {
+          "name": "Mr. Arslan Aslam",
+          "research_tags": [
+            "machine_learning",
+            "deep_learning",
+            "automation",
+            "web_development",
+            "large_language_models",
+            "ai_ml"
+          ],
+          "research_areas": [
+            "Machine Learning",
+            "Deep Learning",
+            "Automation",
+            "Web Development",
+            "Large Language Models"
+          ],
+          "match_message": "Your interests fit applied AI, deep learning, automation, web development, or large language models."
+        },
+        {
+          "name": "Ms. Naveen Khan",
+          "research_tags": [
+            "computer_networking",
+            "network_security",
+            "computer_security",
+            "machine_learning"
+          ],
+          "research_areas": [
+            "Computer Networking",
+            "Network Security",
+            "Computer Security",
+            "Machine Learning"
+          ],
+          "match_message": "Your interests fit computer networking, network security, computer security, or machine learning."
+        }
+      ],
+      "result_disclaimer": "These matches are based only on the research interests in the supplied faculty profiles. They do not establish who is accepting FYP students, who is available, or who is the best supervisor. Confirm current supervision areas and availability directly."
+    },
+    {
+      "id": "impress_sir_hasan",
+      "title": "Can You Impress Sir Hasan Mujtaba?",
+      "type": "technical_mcq",
+      "description": "An Operating Systems quiz covering Process Management and the specified Memory Management topics.",
+      "topics": [
+        "Process Management",
+        "Process States and Process Control Blocks",
+        "Process Scheduling and Context Switching",
+        "Process Creation and Termination",
+        "Interprocess Communication",
+        "Threads and Multithreading",
+        "CPU Scheduling Algorithms",
+        "Process Synchronization",
+        "Critical Sections, Mutexes, and Semaphores",
+        "Classical Synchronization Problems",
+        "Deadlocks",
+        "Virtual-to-Physical Address Translation",
+        "Page Numbers and Page Offsets",
+        "Page Tables",
+        "FIFO Page Replacement",
+        "Optimal Page Replacement"
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "topic": "Process States",
+          "question": "A process is waiting for a disk read to finish. Which state is it most likely in?",
+          "options": [
+            "Ready",
+            "Running",
+            "Waiting/Blocked",
+            "Terminated"
+          ],
+          "answer": "Waiting/Blocked",
+          "explanation": "The process cannot continue until the I/O operation completes."
+        },
+        {
+          "id": 2,
+          "topic": "Process States",
+          "question": "A process has finished its I/O operation and is now waiting for CPU time. Which state is it in?",
+          "options": [
+            "Running",
+            "Ready",
+            "Waiting",
+            "Terminated"
+          ],
+          "answer": "Ready",
+          "explanation": "It is eligible to run but has not yet been assigned the CPU."
+        },
+        {
+          "id": 3,
+          "topic": "Process Control Block",
+          "question": "Why does the OS save a process's program counter during a context switch?",
+          "options": [
+            "To know the next process to terminate",
+            "To resume the process from the correct instruction later",
+            "To calculate the process's page size",
+            "To increase the process's priority"
+          ],
+          "answer": "To resume the process from the correct instruction later",
+          "explanation": "The program counter identifies the next instruction the process should execute."
+        },
+        {
+          "id": 4,
+          "topic": "Context Switching",
+          "question": "What is the main purpose of a context switch?",
+          "options": [
+            "To execute two processes on one CPU at exactly the same instant",
+            "To save one process's state and restore another's",
+            "To permanently remove a process from memory",
+            "To convert a process into a thread"
+          ],
+          "answer": "To save one process's state and restore another's",
+          "explanation": "The OS saves the current execution context and loads the context of the next process."
+        },
+        {
+          "id": 5,
+          "topic": "Context Switching",
+          "question": "Does a context switch normally perform useful application work for the processes being switched?",
+          "options": [
+            "Yes, it executes both processes' instructions",
+            "No, it is overhead required to switch execution",
+            "Only when using Round Robin",
+            "Only when a process is terminated"
+          ],
+          "answer": "No, it is overhead required to switch execution",
+          "explanation": "Context switching is necessary system work, but it does not directly advance the user processes' computations."
+        },
+        {
+          "id": 6,
+          "topic": "Process Creation",
+          "question": "In a UNIX-like system, what does fork() normally create?",
+          "options": [
+            "A new thread in the same process",
+            "A child process",
+            "A new CPU core",
+            "A new page table entry only"
+          ],
+          "answer": "A child process",
+          "explanation": "fork() creates a child process that initially has a copy of the parent's address space."
+        },
+        {
+          "id": 7,
+          "topic": "Process Creation",
+          "question": "A child process calls exec() successfully. What happens?",
+          "options": [
+            "A second child is created",
+            "The current process image is replaced by a new program",
+            "The parent process is terminated",
+            "The child becomes a kernel thread"
+          ],
+          "answer": "The current process image is replaced by a new program",
+          "explanation": "exec() loads a new program into the calling process; it does not create a new process by itself."
+        },
+        {
+          "id": 8,
+          "topic": "Process Termination",
+          "question": "A child process has terminated, but its parent has not yet collected its exit status. What is the child called?",
+          "options": [
+            "Orphan",
+            "Zombie",
+            "Daemon",
+            "Ready process"
+          ],
+          "answer": "Zombie",
+          "explanation": "A zombie has finished execution but still has an entry retaining its exit status until the parent collects it."
+        },
+        {
+          "id": 9,
+          "topic": "Process Termination",
+          "question": "A parent process terminates while its child is still running. What is the child commonly called?",
+          "options": [
+            "Zombie",
+            "Orphan",
+            "Deadlock victim",
+            "Dispatcher"
+          ],
+          "answer": "Orphan",
+          "explanation": "An orphan is a child whose parent has terminated."
+        },
+        {
+          "id": 10,
+          "topic": "Interprocess Communication",
+          "question": "Two unrelated processes need to exchange data through a shared memory region. What must they generally coordinate?",
+          "options": [
+            "Only their process IDs",
+            "Access to the shared region to prevent race conditions",
+            "Their page replacement algorithms",
+            "Their program counters"
+          ],
+          "answer": "Access to the shared region to prevent race conditions",
+          "explanation": "Shared memory allows fast communication, but concurrent access to shared data requires synchronization."
+        },
+        {
+          "id": 11,
+          "topic": "Interprocess Communication",
+          "question": "Which IPC mechanism normally sends data through a communication channel rather than exposing a shared memory region?",
+          "options": [
+            "Pipe",
+            "Shared memory",
+            "Global variable",
+            "Page table"
+          ],
+          "answer": "Pipe",
+          "explanation": "A pipe provides a communication channel through which processes can send and receive data."
+        },
+        {
+          "id": 12,
+          "topic": "Threads",
+          "question": "Which resource is typically shared by threads belonging to the same process?",
+          "options": [
+            "Stack",
+            "Program counter",
+            "Code and data sections",
+            "Register set"
+          ],
+          "answer": "Code and data sections",
+          "explanation": "Threads share the process's code, data, and other process resources, but each thread has its own stack, registers, and program counter."
+        },
+        {
+          "id": 13,
+          "topic": "Threads",
+          "question": "Why can creating a thread be cheaper than creating a separate process?",
+          "options": [
+            "Threads never need CPU scheduling",
+            "Threads can share the process's resources",
+            "Threads do not need stacks",
+            "Threads cannot be interrupted"
+          ],
+          "answer": "Threads can share the process's resources",
+          "explanation": "Threads in one process share many resources, so creation and switching can require less overhead than separate processes."
+        },
+        {
+          "id": 14,
+          "topic": "CPU Scheduling",
+          "question": "Which scheduling algorithm selects the process with the smallest next CPU burst?",
+          "options": [
+            "FCFS",
+            "SJF",
+            "Round Robin",
+            "Priority Scheduling"
+          ],
+          "answer": "SJF",
+          "explanation": "Shortest Job First selects the process with the shortest next CPU burst."
+        },
+        {
+          "id": 15,
+          "topic": "CPU Scheduling",
+          "question": "In preemptive SJF, a new process arrives with a CPU burst shorter than the remaining time of the currently running process. What happens?",
+          "options": [
+            "The new process waits until the current process finishes",
+            "The running process is preempted",
+            "Both processes run simultaneously on one CPU",
+            "The new process is terminated"
+          ],
+          "answer": "The running process is preempted",
+          "explanation": "Preemptive SJF is Shortest Remaining Time First, so the process with the smallest remaining burst runs."
+        },
+        {
+          "id": 16,
+          "topic": "CPU Scheduling",
+          "question": "A Round Robin scheduler uses a time quantum of 4 ms. A process needs 10 ms of CPU time and no other process affects its execution. How many CPU turns does it receive?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "10"
+          ],
+          "answer": "3",
+          "explanation": "The process receives 4 ms, then 4 ms, then its remaining 2 ms."
+        },
+        {
+          "id": 17,
+          "topic": "CPU Scheduling",
+          "question": "What can happen if the Round Robin time quantum is made extremely large?",
+          "options": [
+            "It behaves similarly to FCFS",
+            "It becomes identical to SRTF",
+            "Every process runs simultaneously",
+            "It eliminates waiting time"
+          ],
+          "answer": "It behaves similarly to FCFS",
+          "explanation": "With a very large quantum, processes are unlikely to be preempted before finishing their CPU bursts."
+        },
+        {
+          "id": 18,
+          "topic": "CPU Scheduling",
+          "question": "Which scheduling algorithm can cause starvation of low-priority processes?",
+          "options": [
+            "FCFS",
+            "Priority Scheduling",
+            "Round Robin",
+            "All processes always finish equally"
+          ],
+          "answer": "Priority Scheduling",
+          "explanation": "If higher-priority processes keep arriving, low-priority processes may wait indefinitely."
+        },
+        {
+          "id": 19,
+          "topic": "CPU Scheduling",
+          "question": "What is the purpose of aging in priority scheduling?",
+          "options": [
+            "To reduce the number of processes",
+            "To gradually increase the priority of waiting processes",
+            "To decrease the CPU burst time",
+            "To increase the time quantum"
+          ],
+          "answer": "To gradually increase the priority of waiting processes",
+          "explanation": "Aging helps prevent starvation by increasing the priority of processes that have waited for a long time."
+        },
+        {
+          "id": 20,
+          "topic": "CPU Scheduling",
+          "question": "A process arrives at time 2 and completes at time 10. What is its turnaround time?",
+          "options": [
+            "2",
+            "8",
+            "10",
+            "12"
+          ],
+          "answer": "8",
+          "explanation": "Turnaround time = Completion time - Arrival time = 10 - 2 = 8."
+        },
+        {
+          "id": 21,
+          "topic": "CPU Scheduling",
+          "question": "A process has a turnaround time of 12 ms and a waiting time of 5 ms. What is its CPU burst time, assuming no other time is included?",
+          "options": [
+            "5 ms",
+            "7 ms",
+            "12 ms",
+            "17 ms"
+          ],
+          "answer": "7 ms",
+          "explanation": "CPU burst time = Turnaround time - Waiting time = 12 - 5 = 7 ms."
+        },
+        {
+          "id": 22,
+          "topic": "Synchronization",
+          "question": "Two threads increment the same shared counter without synchronization. What is the main risk?",
+          "options": [
+            "Page fault",
+            "Race condition",
+            "Thrashing",
+            "Internal fragmentation"
+          ],
+          "answer": "Race condition",
+          "explanation": "The final value can depend on the timing and interleaving of the threads' operations."
+        },
+        {
+          "id": 23,
+          "topic": "Critical Section",
+          "question": "Which is NOT one of the three classic requirements for a correct critical-section solution?",
+          "options": [
+            "Mutual exclusion",
+            "Progress",
+            "Bounded waiting",
+            "Maximum CPU utilisation"
+          ],
+          "answer": "Maximum CPU utilisation",
+          "explanation": "The classic requirements are mutual exclusion, progress, and bounded waiting."
+        },
+        {
+          "id": 24,
+          "topic": "Mutex",
+          "question": "A mutex is currently locked by Thread A. What should Thread B do before entering the same protected critical section?",
+          "options": [
+            "Enter anyway",
+            "Wait until it can acquire the mutex",
+            "Delete the mutex",
+            "Create a new process"
+          ],
+          "answer": "Wait until it can acquire the mutex",
+          "explanation": "A mutex ensures that only one thread at a time owns the protected critical section."
+        },
+        {
+          "id": 25,
+          "topic": "Semaphores",
+          "question": "A counting semaphore starts at 3. Two successful wait operations occur, with no signal operations. What is its value?",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "5"
+          ],
+          "answer": "1",
+          "explanation": "Each successful wait operation decrements the semaphore by one."
+        },
+        {
+          "id": 26,
+          "topic": "Semaphores",
+          "question": "A binary semaphore is initialised to 1 and used for mutual exclusion. What does a successful wait operation do?",
+          "options": [
+            "Increases it to 2",
+            "Decreases it to 0",
+            "Terminates the process",
+            "Creates a new thread"
+          ],
+          "answer": "Decreases it to 0",
+          "explanation": "The first thread acquires the semaphore, making it unavailable to another thread until it is signalled."
+        },
+        {
+          "id": 27,
+          "topic": "Bounded Buffer",
+          "question": "In the bounded-buffer problem, what should a producer do when the buffer is full?",
+          "options": [
+            "Insert another item anyway",
+            "Wait until a slot becomes available",
+            "Remove an item",
+            "Terminate the consumer"
+          ],
+          "answer": "Wait until a slot becomes available",
+          "explanation": "The producer must not insert into a full buffer."
+        },
+        {
+          "id": 28,
+          "topic": "Bounded Buffer",
+          "question": "A buffer has 5 slots. Initially, all are empty. A producer inserts 3 items and a consumer removes 1. How many empty slots remain?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": "3",
+          "explanation": "Two items remain in the buffer, so 5 - 2 = 3 empty slots."
+        },
+        {
+          "id": 29,
+          "topic": "Dining Philosophers",
+          "question": "In the dining-philosophers problem, every philosopher picks up their left fork and waits for their right fork. What can occur?",
+          "options": [
+            "Starvation is impossible",
+            "Deadlock",
+            "Paging",
+            "Context switching stops"
+          ],
+          "answer": "Deadlock",
+          "explanation": "Each philosopher holds one resource and waits for another resource held by a neighbour."
+        },
+        {
+          "id": 30,
+          "topic": "Deadlocks",
+          "question": "Which condition means a resource cannot be forcibly taken away from the process holding it?",
+          "options": [
+            "Mutual exclusion",
+            "Hold and wait",
+            "No preemption",
+            "Circular wait"
+          ],
+          "answer": "No preemption",
+          "explanation": "No preemption means resources cannot be forcibly removed; they must be released voluntarily."
+        },
+        {
+          "id": 31,
+          "topic": "Deadlocks",
+          "question": "Which of the following is NOT one of the four necessary conditions for deadlock?",
+          "options": [
+            "Mutual exclusion",
+            "Hold and wait",
+            "Circular wait",
+            "Context switching"
+          ],
+          "answer": "Context switching",
+          "explanation": "The four conditions are mutual exclusion, hold and wait, no preemption, and circular wait."
+        },
+        {
+          "id": 32,
+          "topic": "Deadlocks",
+          "question": "Two processes each hold one resource and wait for the resource held by the other. Which deadlock condition is clearly present?",
+          "options": [
+            "Circular wait",
+            "Paging",
+            "Aging",
+            "Internal fragmentation"
+          ],
+          "answer": "Circular wait",
+          "explanation": "Each process is waiting for a resource held by another process in a cycle."
+        },
+        {
+          "id": 33,
+          "topic": "Deadlocks",
+          "question": "A system prevents deadlock by ensuring that at least one of the four necessary conditions can never hold. Which approach is this?",
+          "options": [
+            "Deadlock prevention",
+            "Deadlock detection",
+            "Demand paging",
+            "CPU scheduling"
+          ],
+          "answer": "Deadlock prevention",
+          "explanation": "Prevention structurally eliminates at least one necessary deadlock condition."
+        },
+        {
+          "id": 34,
+          "topic": "Deadlocks",
+          "question": "A system checks whether granting a resource request would leave it in a safe state. Which approach is this?",
+          "options": [
+            "Deadlock prevention",
+            "Deadlock avoidance",
+            "Deadlock recovery",
+            "FIFO scheduling"
+          ],
+          "answer": "Deadlock avoidance",
+          "explanation": "Avoidance examines resource allocation requests and grants only those that preserve a safe state."
+        },
+        {
+          "id": 35,
+          "topic": "Address Translation",
+          "question": "A system has a page size of 1 KB. What is the page offset for logical address 2500?",
+          "options": [
+            "250",
+            "452",
+            "500",
+            "1024"
+          ],
+          "answer": "452",
+          "explanation": "Offset = 2500 mod 1024 = 452."
+        },
+        {
+          "id": 36,
+          "topic": "Address Translation",
+          "question": "A logical address is 2500 and the page size is 1024 bytes. What is the page number?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "452"
+          ],
+          "answer": "2",
+          "explanation": "Page number = floor(2500 / 1024) = 2."
+        },
+        {
+          "id": 37,
+          "topic": "Address Translation",
+          "question": "A logical address has page number 3 and offset 100. The page size is 1024 bytes. What is the logical address?",
+          "options": [
+            "1124",
+            "3172",
+            "3072",
+            "3100"
+          ],
+          "answer": "3172",
+          "explanation": "Logical address = 3 × 1024 + 100 = 3172."
+        },
+        {
+          "id": 38,
+          "topic": "Page Tables",
+          "question": "A page table maps a virtual page number to what?",
+          "options": [
+            "A physical frame number",
+            "A CPU burst time",
+            "A process priority",
+            "A disk scheduling algorithm"
+          ],
+          "answer": "A physical frame number",
+          "explanation": "The page table translates virtual page numbers into physical frame numbers."
+        },
+        {
+          "id": 39,
+          "topic": "Page Tables",
+          "question": "A process has 8 virtual pages. How many entries are needed in a simple single-level page table for those pages?",
+          "options": [
+            "4",
+            "8",
+            "16",
+            "32"
+          ],
+          "answer": "8",
+          "explanation": "A simple page table has one entry per virtual page."
+        },
+        {
+          "id": 40,
+          "topic": "Address Translation",
+          "question": "A system uses 16-bit virtual addresses and a page size of 256 bytes. How many bits are used for the offset?",
+          "options": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ],
+          "answer": "8",
+          "explanation": "A 256-byte page requires log2(256) = 8 offset bits."
+        },
+        {
+          "id": 41,
+          "topic": "Address Translation",
+          "question": "A system uses 16-bit virtual addresses and 256-byte pages. How many bits remain for the virtual page number?",
+          "options": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ],
+          "answer": "8",
+          "explanation": "Virtual page number bits = 16 - 8 offset bits = 8."
+        },
+        {
+          "id": 42,
+          "topic": "FIFO Page Replacement",
+          "question": "Three frames are initially empty. Using FIFO, how many page faults occur for the reference string 1, 2, 3, 1, 4, 5?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": "5",
+          "explanation": "Faults occur for 1, 2, 3, 4, and 5. The second reference to 1 is a hit."
+        },
+        {
+          "id": 43,
+          "topic": "Optimal Page Replacement",
+          "question": "Three frames are initially empty. Using Optimal replacement, how many page faults occur for the reference string 1, 2, 3, 1, 4, 5?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": "5",
+          "explanation": "The first three references cause faults, the second 1 is a hit, and 4 and 5 each cause a fault. Total = 5."
+        },
+        {
+          "id": 44,
+          "topic": "FIFO Page Replacement",
+          "question": "Two frames are initially empty. Using FIFO, how many page faults occur for the reference string 1, 2, 3, 1, 2, 4?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": "6",
+          "explanation": "The sequence produces a fault on every reference: 1, 2, 3, 1, 2, and 4."
+        },
+        {
+          "id": 45,
+          "topic": "Optimal Page Replacement",
+          "question": "Two frames are initially empty. Using Optimal replacement, how many page faults occur for the reference string 1, 2, 3, 1, 2, 4?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": "5",
+          "explanation": "Faults occur for 1, 2, 3, 2, and 4. After 1 and 2 are loaded, 3 replaces 2 because 2 is used farther in the future. The next 1 is a hit, 2 faults, and 4 faults. Total = 5."
+        },
+        {
+          "id": 46,
+          "topic": "Page Replacement",
+          "question": "Which statement best describes Optimal page replacement?",
+          "options": [
+            "It replaces the page that entered memory first",
+            "It replaces the page whose next use is farthest in the future",
+            "It replaces the page with the smallest page number",
+            "It replaces the page that was used most recently"
+          ],
+          "answer": "It replaces the page whose next use is farthest in the future",
+          "explanation": "Optimal uses future references to choose the page that will be needed latest, or never again."
+        }
+      ]
+    },
+    {
+      "id": "religion_by_country",
+      "title": "Guess the Largest Religious Group",
+      "type": "general_knowledge",
+      "description": "Identify the largest religious group in each country. The answer refers to the largest group, not necessarily a group exceeding 50 percent in every country.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which is the largest religious group in Pakistan?",
+          "options": [
+            "Hinduism",
+            "Islam",
+            "Christianity",
+            "Sikhism"
+          ],
+          "answer": "Islam"
+        },
+        {
+          "id": 2,
+          "question": "Which is the largest religious group in India?",
+          "options": [
+            "Islam",
+            "Hinduism",
+            "Christianity",
+            "Sikhism"
+          ],
+          "answer": "Hinduism"
+        },
+        {
+          "id": 3,
+          "question": "Which is the largest religious group in Thailand?",
+          "options": [
+            "Christianity",
+            "Islam",
+            "Buddhism",
+            "Hinduism"
+          ],
+          "answer": "Buddhism"
+        },
+        {
+          "id": 4,
+          "question": "Which is the largest religious group in Indonesia?",
+          "options": [
+            "Christianity",
+            "Islam",
+            "Hinduism",
+            "Buddhism"
+          ],
+          "answer": "Islam"
+        },
+        {
+          "id": 5,
+          "question": "Which is the largest religious group in Brazil?",
+          "options": [
+            "Islam",
+            "Hinduism",
+            "Christianity",
+            "Buddhism"
+          ],
+          "answer": "Christianity"
+        },
+        {
+          "id": 6,
+          "question": "Which is the largest religious group in Nepal?",
+          "options": [
+            "Buddhism",
+            "Hinduism",
+            "Islam",
+            "Christianity"
+          ],
+          "answer": "Hinduism"
+        },
+        {
+          "id": 7,
+          "question": "Which is the largest religious group in Saudi Arabia?",
+          "options": [
+            "Christianity",
+            "Islam",
+            "Hinduism",
+            "Judaism"
+          ],
+          "answer": "Islam"
+        },
+        {
+          "id": 8,
+          "question": "Which is the largest religious group in Poland?",
+          "options": [
+            "Islam",
+            "Christianity",
+            "Buddhism",
+            "Hinduism"
+          ],
+          "answer": "Christianity"
+        },
+        {
+          "id": 9,
+          "question": "Which is the largest religious group in Armenia?",
+          "options": [
+            "Islam",
+            "Christianity",
+            "Judaism",
+            "Buddhism"
+          ],
+          "answer": "Christianity"
+        }
+      ]
+    },
+    {
+      "id": "guess_pak_political_leader",
+      "title": "Guess the Pak Political Leader",
+      "description": "Rain logic, political one-liners, historic plot twists and facts that sound made up but aren't. Can you identify the Pakistani political leader?",
+      "questions": [
+        {
+          "id": 1,
+          "type": "meme_clue",
+          "question": "“Jab zyada barish hoti hai to zyada pani aata hai.” Which politician delivered this unforgettable piece of weather analysis?",
+          "options": [
+            "Bilawal Bhutto Zardari",
+            "Imran Khan",
+            "Shehbaz Sharif",
+            "Nawaz Sharif"
+          ],
+          "correctAnswer": "Bilawal Bhutto Zardari",
+          "explanation": "Bilawal Bhutto Zardari became the subject of countless memes after this remark about rainfall and water."
+        },
+        {
+          "id": 2,
+          "type": "meme_clue",
+          "question": "A politician looks back at a dramatic period in his career and asks the question that became a national meme: “Mujhe kyun nikala?” Who is it?",
+          "options": [
+            "Asif Ali Zardari",
+            "Nawaz Sharif",
+            "Yousaf Raza Gillani",
+            "Pervez Musharraf"
+          ],
+          "correctAnswer": "Nawaz Sharif",
+          "explanation": "The phrase became strongly associated with Nawaz Sharif after his disqualification and removal from office in 2017."
+        },
+        {
+          "id": 3,
+          "type": "meme_clue",
+          "question": "The economy is doing its own thing, the headlines are getting louder, and someone tells the nation not to panic. Which politician is associated with “Aap ne ghabrana nahi hai”?",
+          "options": [
+            "Imran Khan",
+            "Bilawal Bhutto Zardari",
+            "Nawaz Sharif",
+            "Shahbaz Sharif"
+          ],
+          "correctAnswer": "Imran Khan",
+          "explanation": "The phrase became one of Imran Khan's most widely circulated catchphrases."
+        },
+        {
+          "id": 4,
+          "type": "meme_clue",
+          "question": "A mysterious plane crash, a box of mangoes, and decades of conspiracy theories and internet jokes. Which former military ruler is this meme usually associated with?",
+          "options": [
+            "Ayub Khan",
+            "Yahya Khan",
+            "Zia-ul-Haq",
+            "Pervez Musharraf"
+          ],
+          "correctAnswer": "Zia-ul-Haq",
+          "explanation": "General Zia-ul-Haq died in a plane crash on 17 August 1988. Mangoes became part of the popular theories and jokes surrounding the crash, but the memes are not evidence of what caused it."
+        },
+        {
+          "id": 5,
+          "type": "trivia",
+          "question": "Who was Pakistan's first Prime Minister after independence in 1947?",
+          "options": [
+            "Khawaja Nazimuddin",
+            "Liaquat Ali Khan",
+            "Muhammad Ali Bogra",
+            "Huseyn Shaheed Suhrawardy"
+          ],
+          "correctAnswer": "Liaquat Ali Khan",
+          "explanation": "Liaquat Ali Khan served as Pakistan's first Prime Minister from 1947 until 1951."
+        },
+        {
+          "id": 6,
+          "type": "trivia",
+          "question": "Who became the first woman Prime Minister of Pakistan?",
+          "options": [
+            "Fatima Jinnah",
+            "Hina Rabbani Khar",
+            "Benazir Bhutto",
+            "Maryam Nawaz"
+          ],
+          "correctAnswer": "Benazir Bhutto",
+          "explanation": "Benazir Bhutto took office in December 1988, becoming Pakistan's first woman Prime Minister."
+        },
+        {
+          "id": 7,
+          "type": "trivia",
+          "question": "Pakistan conducted its nuclear tests on 28 May 1998. Who was Prime Minister at the time?",
+          "options": [
+            "Benazir Bhutto",
+            "Nawaz Sharif",
+            "Pervez Musharraf",
+            "Zulfikar Ali Bhutto"
+          ],
+          "correctAnswer": "Nawaz Sharif",
+          "explanation": "Pakistan carried out its nuclear tests in May 1998 during Nawaz Sharif's second term as Prime Minister."
+        },
+        {
+          "id": 8,
+          "type": "trivia",
+          "question": "Which leader founded the Pakistan People's Party (PPP) in 1967?",
+          "options": [
+            "Asif Ali Zardari",
+            "Bilawal Bhutto Zardari",
+            "Zulfikar Ali Bhutto",
+            "Benazir Bhutto"
+          ],
+          "correctAnswer": "Zulfikar Ali Bhutto",
+          "explanation": "Zulfikar Ali Bhutto founded the PPP in 1967. The party later became closely associated with his family."
+        },
+        {
+          "id": 9,
+          "type": "trivia",
+          "question": "Who was Pakistan's first President after the country became an Islamic Republic in 1956?",
+          "options": [
+            "Ayub Khan",
+            "Iskander Mirza",
+            "Yahya Khan",
+            "Fazal Ilahi Chaudhry"
+          ],
+          "correctAnswer": "Iskander Mirza",
+          "explanation": "Iskander Mirza became Pakistan's first President in 1956."
+        },
+        {
+          "id": 10,
+          "type": "trivia",
+          "question": "Which military ruler took power in the 1999 coup that removed Prime Minister Nawaz Sharif?",
+          "options": [
+            "Zia-ul-Haq",
+            "Ayub Khan",
+            "Pervez Musharraf",
+            "Yahya Khan"
+          ],
+          "correctAnswer": "Pervez Musharraf",
+          "explanation": "General Pervez Musharraf took power in October 1999 after removing Nawaz Sharif's government."
+        },
+        {
+          "id": 11,
+          "type": "trivia",
+          "question": "Which leader was Pakistan's Prime Minister when the 1973 Constitution was introduced?",
+          "options": [
+            "Zulfikar Ali Bhutto",
+            "Muhammad Khan Junejo",
+            "Nawaz Sharif",
+            "Liaquat Ali Khan"
+          ],
+          "correctAnswer": "Zulfikar Ali Bhutto",
+          "explanation": "The 1973 Constitution was adopted during Zulfikar Ali Bhutto's tenure as Prime Minister."
+        },
+        {
+          "id": 12,
+          "type": "trivia",
+          "question": "Who was the captain of Pakistan's cricket team when it won the 1992 Cricket World Cup?",
+          "options": [
+            "Wasim Akram",
+            "Inzamam-ul-Haq",
+            "Imran Khan",
+            "Javed Miandad"
+          ],
+          "correctAnswer": "Imran Khan",
+          "explanation": "Imran Khan captained Pakistan to its first Cricket World Cup victory in 1992, years before becoming Prime Minister."
+        },
+        {
+          "id": 13,
+          "type": "trivia",
+          "question": "Which former Prime Minister was dismissed from office by President Ghulam Ishaq Khan in 1990?",
+          "options": [
+            "Nawaz Sharif",
+            "Benazir Bhutto",
+            "Yousaf Raza Gillani",
+            "Shaukat Aziz"
+          ],
+          "correctAnswer": "Benazir Bhutto",
+          "explanation": "Benazir Bhutto's first government was dismissed in August 1990 by President Ghulam Ishaq Khan."
+        },
+        {
+          "id": 14,
+          "type": "trivia",
+          "question": "Which Pakistani politician served as President from 2008 to 2013 and was also the widower of Benazir Bhutto?",
+          "options": [
+            "Bilawal Bhutto Zardari",
+            "Asif Ali Zardari",
+            "Farooq Leghari",
+            "Rafiq Tarar"
+          ],
+          "correctAnswer": "Asif Ali Zardari",
+          "explanation": "Asif Ali Zardari served as President of Pakistan from 2008 to 2013."
+        },
+        {
+          "id": 15,
+          "type": "trivia",
+          "question": "Which military ruler declared martial law on 5 July 1977 and overthrew Zulfikar Ali Bhutto's government?",
+          "options": [
+            "Ayub Khan",
+            "Yahya Khan",
+            "Zia-ul-Haq",
+            "Pervez Musharraf"
+          ],
+          "correctAnswer": "Zia-ul-Haq",
+          "explanation": "General Zia-ul-Haq took power in July 1977 and ruled Pakistan until his death in 1988."
+        },
+        {
+          "id": 16,
+          "type": "meme_clue",
+          "question": "A politician gives an interview about foreign policy and responds with two words that quickly become a viral soundbite: “Absolutely not.” Who said it?",
+          "options": [
+            "Nawaz Sharif",
+            "Imran Khan",
+            "Bilawal Bhutto Zardari",
+            "Shehbaz Sharif"
+          ],
+          "correctAnswer": "Imran Khan",
+          "explanation": "Imran Khan used the phrase “Absolutely not” in a 2021 interview when asked whether Pakistan would allow the CIA to use bases in the country for operations in Afghanistan."
+        },
+        {
+          "id": 17,
+          "type": "trivia",
+          "question": "Which leader became Prime Minister after the 2008 general elections and served until 2012?",
+          "options": [
+            "Raja Pervez Ashraf",
+            "Yousaf Raza Gillani",
+            "Shaukat Aziz",
+            "Shahid Khaqan Abbasi"
+          ],
+          "correctAnswer": "Yousaf Raza Gillani",
+          "explanation": "Yousaf Raza Gillani became Prime Minister in March 2008. The Supreme Court disqualified him in 2012."
+        },
+        {
+          "id": 18,
+          "type": "trivia",
+          "question": "Who was the President of Pakistan when the first martial law was declared in October 1958?",
+          "options": [
+            "Ayub Khan",
+            "Iskander Mirza",
+            "Yahya Khan",
+            "Zulfikar Ali Bhutto"
+          ],
+          "correctAnswer": "Iskander Mirza",
+          "explanation": "Iskander Mirza declared martial law on 7 October 1958 and appointed Ayub Khan as Chief Martial Law Administrator. Ayub Khan removed Mirza later that month."
+        },
+        {
+          "id": 19,
+          "type": "meme_clue",
+          "question": "Imagine a politician trying to explain a complicated situation with the confidence of someone who has already decided the argument is over. Which leader is most associated with the phrase “Islamabad mein kanpain tang rahi hain”?",
+          "options": [
+            "Bilawal Bhutto Zardari",
+            "Imran Khan",
+            "Nawaz Sharif",
+            "Asif Ali Zardari"
+          ],
+          "correctAnswer": "Bilawal Bhutto Zardari",
+          "explanation": "The phrase became another widely circulated Bilawal Bhutto meme. It is often shared alongside his other viral remarks."
+        },
+        {
+          "id": 20,
+          "type": "trivia",
+          "question": "Which leader was executed in 1979 after being removed from power in the 1977 coup?",
+          "options": [
+            "Zulfikar Ali Bhutto",
+            "Liaquat Ali Khan",
+            "Yahya Khan",
+            "Muhammad Khan Junejo"
+          ],
+          "correctAnswer": "Zulfikar Ali Bhutto",
+          "explanation": "Zulfikar Ali Bhutto was executed on 4 April 1979 after a controversial trial."
+        }
+      ]
+    },
+    {
+      "id": "famous_person_snapshot",
+      "title": "Guess the Famous Person from a Snapshot",
+      "type": "visual_recognition",
+      "description": "Identify a famous person using a cropped or zoomed-in feature. Use licensed, public-domain, or permission-cleared photographs.",
+      "image_instructions": {
+        "format": "One cropped image per question",
+        "difficulty": "Start with recognisable features and gradually make the crops more challenging",
+        "rules": [
+          "Do not show names, captions, flags, or other obvious identifiers in the crop.",
+          "Use a different facial feature or visual clue for each question.",
+          "Do not distort the person's face.",
+          "Use image sources that are licensed or permission-cleared for the project."
+        ]
+      },
+      "questions": [
+        {
+          "id": 1,
+          "image_subject": "Imran Khan",
+          "crop_hint": "Eyes and upper face",
+          "options": [
+            "Imran Khan",
+            "Wasim Akram",
+            "Babar Azam",
+            "Shahid Afridi"
+          ],
+          "answer": "Imran Khan"
+        },
+        {
+          "id": 2,
+          "image_subject": "Quaid-e-Azam Muhammad Ali Jinnah",
+          "crop_hint": "Distinctive face profile and moustache",
+          "options": [
+            "Allama Iqbal",
+            "Muhammad Ali Jinnah",
+            "Liaquat Ali Khan",
+            "Sir Syed Ahmad Khan"
+          ],
+          "answer": "Muhammad Ali Jinnah"
+        },
+        {
+          "id": 3,
+          "image_subject": "Malala Yousafzai",
+          "crop_hint": "Eyes and scarf",
+          "options": [
+            "Malala Yousafzai",
+            "Ayesha Omar",
+            "Mahira Khan",
+            "Sanam Saeed"
+          ],
+          "answer": "Malala Yousafzai"
+        },
+        {
+          "id": 4,
+          "image_subject": "Cristiano Ronaldo",
+          "crop_hint": "Hairline and eyes",
+          "options": [
+            "Lionel Messi",
+            "Cristiano Ronaldo",
+            "Neymar",
+            "Kylian Mbappe"
+          ],
+          "answer": "Cristiano Ronaldo"
+        },
+        {
+          "id": 5,
+          "image_subject": "Lionel Messi",
+          "crop_hint": "Beard and eyes",
+          "options": [
+            "Sergio Ramos",
+            "Lionel Messi",
+            "Cristiano Ronaldo",
+            "Luis Suarez"
+          ],
+          "answer": "Lionel Messi"
+        },
+        {
+          "id": 6,
+          "image_subject": "Taylor Swift",
+          "crop_hint": "Eyes and fringe",
+          "options": [
+            "Taylor Swift",
+            "Ariana Grande",
+            "Selena Gomez",
+            "Dua Lipa"
+          ],
+          "answer": "Taylor Swift"
+        },
+        {
+          "id": 7,
+          "image_subject": "Albert Einstein",
+          "crop_hint": "Hair and moustache",
+          "options": [
+            "Nikola Tesla",
+            "Albert Einstein",
+            "Charles Darwin",
+            "Isaac Newton"
+          ],
+          "answer": "Albert Einstein"
+        },
+        {
+          "id": 8,
+          "image_subject": "Atif Aslam",
+          "crop_hint": "Eyes and beard",
+          "options": [
+            "Atif Aslam",
+            "Ali Zafar",
+            "Asim Azhar",
+            "Fawad Khan"
+          ],
+          "answer": "Atif Aslam"
+        },
+        {
+          "id": 9,
+          "image_subject": "Shah Rukh Khan",
+          "crop_hint": "Eyes and smile",
+          "options": [
+            "Salman Khan",
+            "Aamir Khan",
+            "Shah Rukh Khan",
+            "Saif Ali Khan"
+          ],
+          "answer": "Shah Rukh Khan"
+        },
+        {
+          "id": 10,
+          "image_subject": "MrBeast",
+          "crop_hint": "Eyes and smile",
+          "options": [
+            "Mark Rober",
+            "MrBeast",
+            "Logan Paul",
+            "IShowSpeed"
+          ],
+          "answer": "MrBeast"
+        }
+      ]
+    },
+    {
+      "quiz_title": "Which Supernatural Being Are You?",
+      "quiz_description": "Fae bargains, ancient curses, moonlit forests, and questionable life choices. Find out which supernatural creature is hiding in your personality.",
+      "scoring_method": {
+        "type": "highest_score",
+        "rule": "Each selected option awards one point to its assigned result_id. The result with the highest score is displayed.",
+        "tie_breaker": "Randomly select one of the tied results."
+      },
+      "results": [
+        {
+          "id": "fae",
+          "name": "Fae",
+          "description": "You are charming, unpredictable, and just a little dangerous. You notice details other people miss, have a talent for getting your way without technically asking, and would absolutely exploit a loophole in an ancient magical contract. You belong somewhere between an enchanted forest and a very expensive party."
+        },
+        {
+          "id": "vampire",
+          "name": "Vampire",
+          "description": "Elegant, observant, and difficult to impress. You appreciate the finer things, keep your circle small, and have a mysterious quality that makes people want to know more. You don't chase attention. It tends to find you anyway. Your sleep schedule is also nobody's business."
+        },
+        {
+          "id": "witch",
+          "name": "Witch",
+          "description": "Resourceful, intuitive, and quietly powerful. You have a solution for almost everything, even if it involves an unconventional method and a suspicious-looking collection of objects. You trust your instincts, value your independence, and probably know more than you let on."
+        },
+        {
+          "id": "werewolf",
+          "name": "Werewolf",
+          "description": "Loyal, passionate, and fiercely protective of your people. You feel things deeply, dislike being controlled, and have a competitive streak that appears at the most unexpected times. You may seem easygoing, but cross someone you care about and the atmosphere changes."
+        },
+        {
+          "id": "siren",
+          "name": "Siren",
+          "description": "Magnetic, expressive, and impossible to forget. You understand the power of a well-timed word, a little mystery, and knowing when to leave. You crave experiences that make you feel alive, and ordinary routines were never going to contain you."
+        },
+        {
+          "id": "nymph",
+          "name": "Nymph",
+          "description": "Gentle, imaginative, and deeply connected to the little things. You find beauty in places other people overlook and would rather have a peaceful afternoon than an unnecessarily complicated social situation. Your energy is comforting, but don't mistake softness for weakness."
+        },
+        {
+          "id": "ghost",
+          "name": "Ghost",
+          "description": "A little detached, endlessly curious, and always observing. You can be present without really being involved, and sometimes you prefer the company of your own thoughts. You have a nostalgic streak and an uncanny ability to remember things everyone else has forgotten."
+        },
+        {
+          "id": "zombie",
+          "name": "Zombie",
+          "description": "Unbothered, persistent, and surprisingly difficult to defeat. You may not always have a plan, but somehow you keep going. Deadlines, drama, and unexpected disasters have all tried you. You remain standing, occasionally confused, but standing."
+        },
+        {
+          "id": "gorgon",
+          "name": "Gorgon",
+          "description": "Independent, sharp-minded, and not particularly interested in pleasing everyone. You have strong boundaries, an even stronger sense of self, and a look that can end a conversation without saying a word. You don't need to be liked by everybody."
+        },
+        {
+          "id": "mermaid",
+          "name": "Mermaid",
+          "description": "Curious, adventurous, and drawn to everything beyond the horizon. You need freedom, variety, and a little wonder in your life. You can be sentimental one moment and ready to disappear on a spontaneous adventure the next."
+        },
+        {
+          "id": "dragon",
+          "name": "Dragon",
+          "description": "Ambitious, formidable, and protective of what you have built. You have high standards, a strong sense of ownership, and a tendency to take things personally when someone underestimates you. You aren't necessarily looking for a fight, but you are very prepared for one."
+        },
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "question": "You wake up one day to find that you've switched bodies with a famous celebrity. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Enjoy it. Buy everything you can, go out in the paparazzi, and see which celebrities you can get invited to meet.",
+              "result_id": "vampire"
+            },
+            {
+              "id": "b",
+              "text": "Honestly, just sit there for a while. This is above your pay grade.",
+              "result_id": "ghost"
+            },
+            {
+              "id": "c",
+              "text": "Create a scandal so spectacular that the celebrity will never be able to explain it.",
+              "result_id": "fae"
+            },
+            {
+              "id": "d",
+              "text": "Find the celebrity and figure out whether they're in your body. You need to work together on this.",
+              "result_id": "witch"
+            },
+            {
+              "id": "e",
+              "text": "Use the opportunity to finally say everything you've been holding back in interviews.",
+              "result_id": "gorgon"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "What's your favourite kind of weather?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Very hot and sunny. Proper summer, no complaints.",
+              "result_id": "dragon"
+            },
+            {
+              "id": "b",
+              "text": "Stormy, with lightning. The more dramatic, the better.",
+              "result_id": "witch"
+            },
+            {
+              "id": "c",
+              "text": "Lightly snowing, chilly, and quiet.",
+              "result_id": "ghost"
+            },
+            {
+              "id": "d",
+              "text": "Gentle rain with a little sunshine.",
+              "result_id": "nymph"
+            },
+            {
+              "id": "e",
+              "text": "Foggy, grey, and dark. A little atmospheric.",
+              "result_id": "vampire"
+            },
+            {
+              "id": "f",
+              "text": "Warm and sunny, but not so hot that existing becomes difficult.",
+              "result_id": "mermaid"
+            },
+            {
+              "id": "g",
+              "text": "Snowstorms and heavy snow. I want the world to look completely inaccessible.",
+              "result_id": "werewolf"
+            },
+            {
+              "id": "h",
+              "text": "Cloudy and rainy, but not quite stormy. Just enough to stay indoors.",
+              "result_id": "zombie"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Do you want to travel, and if so, where?",
+          "options": [
+            {
+              "id": "a",
+              "text": "No. I have everything I need right here. Please don't make me pack.",
+              "result_id": "nymph"
+            },
+            {
+              "id": "b",
+              "text": "Everywhere. I want to see as much of the world as humanly possible.",
+              "result_id": "mermaid"
+            },
+            {
+              "id": "c",
+              "text": "A few different countries, especially places I've always heard about.",
+              "result_id": "siren"
+            },
+            {
+              "id": "d",
+              "text": "I mostly want to move away from where I currently live. The destination is secondary.",
+              "result_id": "werewolf"
+            },
+            {
+              "id": "e",
+              "text": "There are one or two places I absolutely need to visit. Everything else is optional.",
+              "result_id": "vampire"
+            },
+            {
+              "id": "f",
+              "text": "If the opportunity comes up, sure. I'm not going to organise my entire life around it.",
+              "result_id": "zombie"
+            },
+            {
+              "id": "g",
+              "text": "Wherever the things I want in life happen to be. I'm not attached to one location.",
+              "result_id": "dragon"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Which power would you most like to possess?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Invisibility. Sometimes I want to exist without being perceived.",
+              "result_id": "ghost"
+            },
+            {
+              "id": "b",
+              "text": "Mind reading. I need to know what people are actually thinking.",
+              "result_id": "siren"
+            },
+            {
+              "id": "c",
+              "text": "Control over the dead. There are a few conversations I'd like to have.",
+              "result_id": "witch"
+            },
+            {
+              "id": "d",
+              "text": "Super strength and speed. Being physically unstoppable sounds useful.",
+              "result_id": "werewolf"
+            },
+            {
+              "id": "e",
+              "text": "Teleportation. No commutes, no waiting, no airport security.",
+              "result_id": "fae"
+            },
+            {
+              "id": "g",
+              "text": "Speaking to animals. They probably have better things to say than most people.",
+              "result_id": "nymph"
+            },
+            {
+              "id": "h",
+              "text": "Breathing underwater and in space. I want access to places humans can't reach.",
+              "result_id": "mermaid"
+            },
+            {
+              "id": "f",
+              "text": "Immortality. I have far too much curiosity to die on schedule.",
+              "result_id": "vampire"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Which of these do you value most in life?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Romantic love. I want the kind of connection that changes your entire world.",
+              "result_id": "siren"
+            },
+            {
+              "id": "b",
+              "text": "Money and status. I want to be comfortable, successful, and impossible to overlook.",
+              "result_id": "dragon"
+            },
+            {
+              "id": "c",
+              "text": "Family and friends. The people I love are the whole point.",
+              "result_id": "werewolf"
+            },
+            {
+              "id": "d",
+              "text": "My work. Having something meaningful to build matters to me.",
+              "result_id": "witch"
+            },
+            {
+              "id": "e",
+              "text": "Travel and experiences. I want a life full of stories.",
+              "result_id": "mermaid"
+            },
+            {
+              "id": "f",
+              "text": "Never dying. There is too much to see and not enough time.",
+              "result_id": "vampire"
+            },
+            {
+              "id": "g",
+              "text": "Peace of mind. I don't need a spectacular life if I can enjoy the one I have.",
+              "result_id": "nymph"
+            },
+            {
+              "id": "h",
+              "text": "Freedom. I want to make my own choices without constantly explaining them.",
+              "result_id": "fae"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Where would you dream of living?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A dark castle with huge windows, old paintings, and an unnecessary number of rooms.",
+              "result_id": "vampire"
+            },
+            {
+              "id": "b",
+              "text": "A cabin in the forest and mountains, miles away from everyone.",
+              "result_id": "werewolf"
+            },
+            {
+              "id": "d",
+              "text": "A cottage in the woods, with flowers growing everywhere.",
+              "result_id": "fae"
+            },
+            {
+              "id": "e",
+              "text": "A beach house where I can hear the ocean from my bedroom.",
+              "result_id": "mermaid"
+            },
+            {
+              "id": "f",
+              "text": "A woodland farmhouse with a garden and plenty of animals.",
+              "result_id": "nymph"
+            },
+            {
+              "id": "g",
+              "text": "A Victorian mansion with a slightly suspicious history.",
+              "result_id": "ghost"
+            },
+            {
+              "id": "h",
+              "text": "A coastal house with dramatic views and enough space to disappear for a while.",
+              "result_id": "siren"
+            },
+            {
+              "id": "c",
+              "text": "A modern penthouse. Beautiful, secure, and preferably inaccessible to unwanted visitors.",
+              "result_id": "gorgon"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Which animal is your favourite?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Raven",
+              "result_id": "witch"
+            },
+            {
+              "id": "b",
+              "text": "Wolf",
+              "result_id": "werewolf"
+            },
+            {
+              "id": "c",
+              "text": "Owl",
+              "result_id": "ghost"
+            },
+            {
+              "id": "d",
+              "text": "Cat",
+              "result_id": "vampire"
+            },
+            {
+              "id": "e",
+              "text": "Dolphin",
+              "result_id": "mermaid"
+            },
+            {
+              "id": "f",
+              "text": "Rabbit",
+              "result_id": "nymph"
+            },
+            {
+              "id": "g",
+              "text": "Moth",
+              "result_id": "fae"
+            },
+            {
+              "id": "h",
+              "text": "Seahorse",
+              "result_id": "siren"
+            },
+            {
+              "id": "i",
+              "text": "Snake",
+              "result_id": "gorgon"
+            },
+            {
+              "id": "j",
+              "text": "Dragon",
+              "result_id": "dragon"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which supernatural ability sounds the most appealing?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Heightened senses. I want to notice absolutely everything.",
+              "result_id": "werewolf"
+            },
+            {
+              "id": "b",
+              "text": "Shapeshifting. I would like to try being someone or something else.",
+              "result_id": "fae"
+            },
+            {
+              "id": "c",
+              "text": "Sensing when someone is about to die.",
+              "result_id": "ghost"
+            },
+            {
+              "id": "d",
+              "text": "Magic. No further explanation needed.",
+              "result_id": "witch"
+            },
+            {
+              "id": "e",
+              "text": "Hypnosis. The possibilities are fascinating.",
+              "result_id": "siren"
+            },
+            {
+              "id": "f",
+              "text": "Manipulating nature and making plants grow wherever I want.",
+              "result_id": "nymph"
+            },
+            {
+              "id": "g",
+              "text": "Intangibility. Walking through walls would solve so many problems.",
+              "result_id": "zombie"
+            },
+            {
+              "id": "h",
+              "text": "Hydrokinesis. Controlling water would be incredible.",
+              "result_id": "mermaid"
+            },
+            {
+              "id": "i",
+              "text": "Turning people to stone with a glance.",
+              "result_id": "gorgon"
+            },
+            {
+              "id": "j",
+              "text": "Breathing fire. Sometimes subtlety is overrated.",
+              "result_id": "dragon"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Which movie genre do you gravitate towards?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Psychological thriller",
+              "result_id": "ghost"
+            },
+            {
+              "id": "b",
+              "text": "Adventure",
+              "result_id": "dragon"
+            },
+            {
+              "id": "c",
+              "text": "Supernatural mystery",
+              "result_id": "witch"
+            },
+            {
+              "id": "d",
+              "text": "Fantasy",
+              "result_id": "fae"
+            },
+            {
+              "id": "e",
+              "text": "Drama",
+              "result_id": "vampire"
+            },
+            {
+              "id": "f",
+              "text": "Rom-com",
+              "result_id": "nymph"
+            },
+            {
+              "id": "g",
+              "text": "Historical",
+              "result_id": "gorgon"
+            },
+            {
+              "id": "h",
+              "text": "Adventure romance",
+              "result_id": "siren"
+            },
+            {
+              "id": "i",
+              "text": "Horror. The more unsettling, the better.",
+              "result_id": "zombie"
+            },
+            {
+              "id": "j",
+              "text": "Action. I want something to actually happen.",
+              "result_id": "werewolf"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "You find a mysterious door in a place you've visited a hundred times. It wasn't there yesterday. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Open it immediately. I've been waiting for something interesting to happen.",
+              "result_id": "mermaid"
+            },
+            {
+              "id": "b",
+              "text": "Inspect the door, the hinges, the floor, and everything around it before touching anything.",
+              "result_id": "witch"
+            },
+            {
+              "id": "c",
+              "text": "Knock. If something answers, I'll decide what to do next.",
+              "result_id": "ghost"
+            },
+            {
+              "id": "d",
+              "text": "Try to find out who owns the place and why there's a new door.",
+              "result_id": "gorgon"
+            },
+            {
+              "id": "e",
+              "text": "Check whether anyone else has noticed it. I'm not walking into a trap alone.",
+              "result_id": "werewolf"
+            },
+            {
+              "id": "f",
+              "text": "Look for a catch. Mysterious opportunities rarely come without conditions.",
+              "result_id": "fae"
+            },
+            {
+              "id": "g",
+              "text": "Take a picture and leave. I have no intention of becoming a cautionary tale.",
+              "result_id": "zombie"
+            },
+            {
+              "id": "h",
+              "text": "Open it, but make sure I look good doing it.",
+              "result_id": "siren"
+            },
+            {
+              "id": "i",
+              "text": "Wonder whether there's treasure behind it. There probably should be.",
+              "result_id": "dragon"
+            },
+            {
+              "id": "j",
+              "text": "Go home, make tea, and think about it for three business days.",
+              "result_id": "nymph"
+            },
+            {
+              "id": "k",
+              "text": "Walk straight through it. If it is supernatural, I might as well commit.",
+              "result_id": "vampire"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
