@@ -1220,3 +1220,36 @@ footer {
     max-width: 100%;
   }
 }
+.archive-card {
+  padding: 16px;
+}
+
+.archive-card:has(.archive-card-link) {
+  padding: 0;
+}
+
+.archive-card-link {
+  padding: 16px;
+}
+
+.archive-card:has(.archive-bookmark) .archive-card-link {
+  padding-right: 48px;
+}
+
+@media (max-width: 760px) {
+  .archive-card {
+    padding: 12px;
+  }
+
+  .archive-card:has(.archive-card-link) {
+    padding: 0;
+  }
+
+  .archive-card-link {
+    padding: 12px;
+  }
+
+  .archive-card:has(.archive-bookmark) .archive-card-link {
+    padding-right: 44px;
+  }
+}
