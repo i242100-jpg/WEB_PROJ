@@ -1,0 +1,173 @@
+[
+  {
+    "id": "dispatch",
+    "name": "Current Affairs",
+    "subtitle": "Headlines from 2025–26",
+    "questions": [
+      {
+        "prompt": "Which city hosted COP31 in November 2026?",
+        "options": [
+          "Belém",
+          "Baku",
+          "Antalya",
+          "Dubai"
+        ],
+        "correct": 2
+      },
+      {
+        "prompt": "Who received the 2025 Nobel Peace Prize?",
+        "options": [
+          "Maria Ressa",
+          "Maria Corina Machado",
+          "Narges Mohammadi",
+          "Malala Yousafzai"
+        ],
+        "correct": 1
+      },
+      {
+        "prompt": "How many countries co-hosted the 2026 FIFA World Cup?",
+        "options": [
+          "Two",
+          "Four",
+          "Five",
+          "Three"
+        ],
+        "correct": 3
+      },
+      {
+        "prompt": "Which pair hosted the 2026 men’s T20 World Cup?",
+        "options": [
+          "India and Sri Lanka",
+          "Pakistan and UAE",
+          "Australia and New Zealand",
+          "England and Wales"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "Which country hosted COP30 in 2025?",
+        "options": [
+          "Kenya",
+          "Brazil",
+          "Türkiye",
+          "Azerbaijan"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "giza",
+    "name": "History of the Pyramids of Giza",
+    "subtitle": "The royal tombs of ancient Egypt",
+    "questions": [
+      {
+        "prompt": "Whose tomb was the Great Pyramid of Giza?",
+        "options": [
+          "Khafre",
+          "Tutankhamun",
+          "Khufu",
+          "Ramesses II"
+        ],
+        "correct": 2
+      },
+      {
+        "prompt": "Which dynasty built the three main pyramids at Giza?",
+        "options": [
+          "Fourth",
+          "First",
+          "Twelfth",
+          "Eighteenth"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "Which stone originally covered the Great Pyramid’s exterior?",
+        "options": [
+          "Basalt",
+          "Granite",
+          "Sandstone",
+          "Limestone"
+        ],
+        "correct": 3
+      },
+      {
+        "prompt": "Which two kings built the other two main Giza pyramids?",
+        "options": [
+          "Djoser and Sneferu",
+          "Khafre and Menkaure",
+          "Seti I and Seti II",
+          "Akhenaten and Horemheb"
+        ],
+        "correct": 1
+      },
+      {
+        "prompt": "Where is Khufu’s sarcophagus inside the pyramid?",
+        "options": [
+          "Grand Gallery",
+          "Queen’s Chamber",
+          "King’s Chamber",
+          "Entrance passage"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "web",
+    "name": "Web Programming",
+    "subtitle": "Browsers, React and the web",
+    "questions": [
+      {
+        "prompt": "Which HTML element creates a hyperlink?",
+        "options": [
+          "<link>",
+          "<a>",
+          "<nav>",
+          "<url>"
+        ],
+        "correct": 1
+      },
+      {
+        "prompt": "Which HTTP method normally retrieves a resource?",
+        "options": [
+          "DELETE",
+          "PATCH",
+          "POST",
+          "GET"
+        ],
+        "correct": 3
+      },
+      {
+        "prompt": "Which CSS property sets the space inside a border?",
+        "options": [
+          "padding",
+          "margin",
+          "gap",
+          "outline"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "Which React Hook stores state between renders?",
+        "options": [
+          "useEffect",
+          "useMemo",
+          "useState",
+          "useId"
+        ],
+        "correct": 2
+      },
+      {
+        "prompt": "In the Next.js App Router, which file defines the /about page?",
+        "options": [
+          "app/about/layout.tsx",
+          "app/about/page.tsx",
+          "app/page/about.tsx",
+          "public/about.tsx"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+]

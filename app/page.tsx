@@ -12,7 +12,7 @@ export default function HomePage() {
       <nav aria-label="Explore the atlas">
         <Link href="/quizzes">
           <span>Quizzes</span>
-          <small>Explore four collections</small>
+          <small>Explore five collections</small>
         </Link>
         <Link href="/scores">
           <span>Scorebook</span>

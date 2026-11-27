@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 
 const places = [
   { href: "/quizzes", name: "The Archive" },
@@ -10,11 +10,13 @@ const places = [
   { href: "/scores", name: "The Observatory" },
 ];
 
-export default function AtlasLayout({ children }: { children: ReactNode }) {
+export interface AtlasLayoutProps { children: ReactNode }
+export default function AtlasLayout({ children }: AtlasLayoutProps) {
   const pathname = usePathname();
   const [entering, setEntering] = useState(pathname === "/");
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
   const place = places.find((item) => item.href === pathname);
-  const room = pathname === "/" ? "home" : pathname.slice(1);
+  const room = pathname === "/" ? "home" : pathname.startsWith("/quizzes/") && pathname !== "/quizzes/education" ? "detail" : pathname.slice(1);
 
   return (
     <div
@@ -35,9 +37,9 @@ export default function AtlasLayout({ children }: { children: ReactNode }) {
         <Link className="brand" href="/">
           <i aria-hidden="true">✧</i>Quiz Atlas
         </Link>
-        <Link id="scoreButton" href="/scores">
-          My score
-        </Link>
+        <nav aria-label="Main navigation" className="atlas-main-nav"><Link href="/quizzes">Archive</Link><Link href="/about">About</Link><Link href="/profile">Profile</Link><Link id="scoreButton" href="/scores">
+          My scores
+        </Link></nav>
       </header>
       <main key={pathname} className="destination">
         {children}

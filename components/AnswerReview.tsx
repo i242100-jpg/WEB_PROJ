@@ -1,0 +1,3 @@
+export interface ReviewItem {prompt:string; selected:string; correct:string; outcome:string}
+export interface AnswerReviewProps {items:ReviewItem[]}
+export default function AnswerReview({items}:AnswerReviewProps) {return <section className="mt-4 rounded border border-amber-200/30 p-3 text-left"><h2 className="text-xl font-semibold">Answer review</h2><ol className="space-y-3">{items.map((q,i)=><li key={i} className="border-b border-amber-200/20 py-2"><strong>{i+1}. {q.prompt}</strong><div>Your answer: {q.selected}</div><div>Correct answer: {q.correct}</div><div className="font-semibold">{q.outcome}</div></li>)}</ol></section>}
