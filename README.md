@@ -1,68 +1,289 @@
 # Quiz Atlas
 
-CS4032 Web Programming — Assignment 3, Topic 23 (Quiz App). An illustrated, torchlit quiz world built with Next.js App Router, React, TypeScript and Tailwind CSS. Explore five collections, receive personality matches, complete factual quizzes, earn coins and review your scores in the Observatory. No backend or real login is used.
+**CS4032 Web Programming | Assignment 3 | Topic 23: Quiz App**
 
-## Group information
+FAST National University of Computer and Emerging Sciences, Islamabad
 
-Group number: to be confirmed by the group.
+## 1. Project Overview
 
-| Member | Roll number | Contribution status |
-| --- | --- | --- |
-| Iraj Aslam | 24I-2100 | Initial animated homepage and completed frontend prototype; integration and Education/Observatory work |
-| Hajra Tariq | 24I-2000 | University/GK question bank committed to shared repository; further assigned implementation and testing to be recorded after completion |
-| Adeeba Sohail | To be confirmed | Assigned Archive/quiz player review and further implementation; record actual work after completion |
+Quiz Atlas is an interactive, illustrated quiz website that transforms learning and entertainment into an exploration experience. Users enter a torchlit world, navigate through panoramic scenery, discover quizzes in the Archive, and track their achievements in the Observatory.
 
-Update this table with verified individual contributions before submission. This package contains AI-assisted improvements to the existing prototype, not independently authored commits by each member.
+The application is built using Next.js, React, TypeScript and Tailwind CSS. It operates entirely on the frontend using structured mock data and browser-based persistent storage.
 
-## Run locally
+## 2. Group Members
 
-Use Node.js 22 LTS or newer. From the project root:
+| Member | Roll Number |
+|---|---|
+| Iraj Aslam | 24I-2100 |
+| Hajra Tariq | 24I-2000 |
+| Adeeba Sohail | 24I-2067 |
 
-```sh
-npm install
+## 3. Website Features
+
+### The Passage
+
+- Animated torchlight introduction.
+- Illustrated panoramic environment.
+- Smooth navigation transitions.
+- Consistent fantasy-inspired visual design.
+
+### The Archive
+
+- 15 quizzes organized into five collections.
+- Search by quiz title.
+- Category-based filtering.
+- Alphabetical sorting in ascending and descending order.
+- Sorting by question count.
+- Persistent quiz bookmarks.
+- Bookmarked-only filtering.
+- Dynamic quiz routes.
+- Empty search results and filter reset functionality.
+
+### Quiz Collections
+
+| Collection | Number of Quizzes | Functionality |
+|---|---:|---|
+| Series | 3 | Entertainment-based illustrated matches |
+| Personality | 3 | Personality and character assessments |
+| University | 3 | University-themed quizzes |
+| General Knowledge | 3 | Factual quizzes and photographic questions |
+| Education | 3 | Timed educational challenges |
+| **Total** | **15** | |
+
+### Education Challenges
+
+- Three educational quizzes containing five questions each.
+- Ten-second countdown per question.
+- Automatic progression when time expires.
+- One coin awarded for every correct answer.
+- Individual and combined scores out of 15.
+- Correct, incorrect and expired answer tracking.
+- Answer review after completion.
+
+### Explorer Profiles
+
+- Create and select personal profiles.
+- Rename existing profiles.
+- Validate empty, short and duplicate names.
+- Preserve existing scores when renaming profiles.
+- Store scores separately for each player.
+- Persist profile information using localStorage.
+
+### The Observatory
+
+- Personalized scorebook.
+- Education and General Knowledge results.
+- Earned coins and available coins.
+- Correct and incorrect answer statistics.
+- GK accuracy percentages.
+- Completed quiz counts.
+- Individual quiz performance.
+- Persistent results across browser refreshes.
+
+## 4. Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Next.js | App Router, page routing, metadata and static generation |
+| React | Component-based user interface and interactive state |
+| TypeScript | Type safety, interfaces and typed component props |
+| Tailwind CSS | Utility-based styling |
+| CSS | Custom layouts, animations and responsive design |
+| SVG | Illustrated panoramic scenery and visual assets |
+| JSON | Structured mock quiz data |
+| localStorage | Persistent profiles, bookmarks and quiz results |
+| Git and GitHub | Version control and team collaboration |
+
+## 5. Installation and Execution
+
+### Prerequisites
+
+- Node.js 22 LTS or a compatible newer version
+- npm
+- Git
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/i242100-jpg/WEB_PROJ.git
+cd WEB_PROJ
+```
+
+### Install Dependencies
+
+```bash
+npm ci
+```
+
+### Start the Development Server
+
+```bash
 npm run dev
 ```
 
-Visit http://localhost:3000. For production verification run `npm run build`, then `npm start`. Run `npm run lint` for lint checks.
+Open http://localhost:3000 in a web browser.
 
-## Routes
+### Production Build
 
-| Route | Purpose |
-| --- | --- |
-| `/` | Animated Passage with panoramic navigation |
-| `/quizzes` | Archive: category collections, search and filtering |
-| `/quizzes/[id]` | Dynamic quiz details and playable quiz, with unknown IDs handled by `notFound()` |
-| `/quizzes/education` | Three timed Education challenges |
-| `/scores` | Observatory: Education and GK scorebook |
-| `/profile` | Controlled explorer form with validation and confirmation |
-| `/about` | App description |
-| Unknown route | Custom not-found screen |
+```bash
+npm run build
+npm start
+```
 
-The Archive includes a loading boundary. Quiz details use generated metadata and static params. Interactive components use client state; display-only route wrappers remain Server Components.
+No external database, API keys or environment variables are required.
 
-## Components and data
+## 6. Application Routes
 
-`components/` contains AtlasLayout, QuizCard, QuizSearch, PhotoQuestion, AnswerReview, QuizTimer, PlayerForm and SectionHeading with typed props. QuizCard is reused on the Archive and detail pages; SectionHeading and AnswerReview are also reused. Mock data is in `app/quizzes/` and includes 15 quiz records in five collections. Education and GK scores use localStorage with in-memory fallback. A simulated profile only uses React state.
+| Route | Description |
+|---|---|
+| `/` | Animated Passage and homepage |
+| `/quizzes` | Archive containing all quiz collections |
+| `/quizzes/[id]` | Dynamic quiz details and gameplay |
+| `/quizzes/education` | Timed Education challenges |
+| `/scores` | Personalized Observatory and scorebook |
+| `/profile` | Explorer profile management |
+| `/about` | Application information and collection descriptions |
+| Invalid route | Custom not-found page |
 
-## Verification checklist
+Dynamic quiz routes use generated static parameters and metadata. Invalid quiz identifiers are handled using `notFound()`. The Archive also includes a loading boundary.
 
-- Search by quiz title, filter by category, and clear empty results.
-- Open a dynamic detail such as `/quizzes/campus`; visit `/quizzes/nonexistent` to check the 404.
-- Complete a Series/Personality quiz and inspect its match result.
-- Complete a GK quiz, review the answers, visit the Observatory, and refresh to check persistence.
-- Play Education; select an answer, allow a question to expire, and complete a topic. Review answers and finish all three topics to see the combined score out of 15.
-- Submit an empty profile form, verify errors, then enter valid values and verify confirmation.
-- Inspect the app at 375, 768 and 1280 pixels; verify keyboard navigation and the animated home page.
-- Run `npm run build` and record the result before submission.
+## 7. Reusable Components
 
-## Repository and demo
+| Component | Responsibility |
+|---|---|
+| AtlasLayout | Shared page layout, scenery and navigation |
+| QuizCard | Reusable quiz cards and optional bookmark controls |
+| QuizSearch | Search, sorting, filtering and bookmark management |
+| PhotoQuestion | Display of photographic quiz questions |
+| AnswerReview | Review of completed quiz answers |
+| QuizTimer | Countdown display for timed questions |
+| PlayerForm | Profile creation, selection, renaming and validation |
+| SectionHeading | Reusable section headings |
+| GKPerformance | General Knowledge performance statistics |
 
-Repository: https://github.com/i242100-jpg/WEB_A3
+The application uses typed component props, reusable UI elements, Server Components for route wrappers, and Client Components for interactive functionality.
 
-Video link: add the verified link if hosted externally. All three members must demonstrate their own actual contributions in the 8–12 minute recording.
+QuizCard is reused in the Archive and quiz detail pages with different configurations.
 
-Vercel: optional; add the verified live link only if deployed.
+## 8. Data Management
 
-## AI and asset credits
+Quiz content is stored in structured JSON files containing quiz identifiers, categories, titles, questions, answer options and result information.
 
-ChatGPT assisted with the prototype, SVG scenery, quiz logic, refactoring, and rubric-related improvements. The group must review and understand code presented in the demo. The passage illustration incorporates traced storyboard artwork from Kurzgesagt's [We Finally Know More About Humanity’s First Civilization](https://www.youtube.com/watch?v=_y9JuojAIg0). Photo source and license information is in `public/snapshots/credits.txt`.
+The application uses localStorage for:
+
+- Saved explorer profiles.
+- Active player selection.
+- Personal Education quiz results.
+- Personal General Knowledge quiz results.
+- Quiz bookmarks.
+
+Player-specific score keys use unique profile identifiers rather than profile names. This allows users to rename their profiles without losing previous results.
+
+Bookmarks are stored at browser level. Profiles and scores are specific to the browser and website origin.
+
+The application does not use a backend database or real authentication system.
+
+## 9. Responsive Design
+
+The website supports mobile, tablet and desktop layouts.
+
+Testing was performed at the following viewport widths:
+
+- 375px: Mobile
+- 768px: Tablet
+- 1280px: Desktop
+- 1920px: Large desktop
+
+Responsive layouts, flexible grids, media queries, readable typography, keyboard focus indicators and consistent spacing are used throughout the application.
+
+## 10. Individual Contributions
+
+| Member | Implementation and Responsibilities |
+|---|---|
+| Iraj Aslam | Animated homepage, panoramic navigation, visual design, shared layout, core frontend implementation, quiz engine, Education question bank and timed challenges, Observatory, score tracking, responsive design, GitHub integration, testing and final styling corrections. |
+| Adeeba Sohail | Series and Personality question banks, Archive enhancements, alphabetical sorting, question-count sorting, persistent bookmarks, bookmarked-only filtering, reusable quiz card improvements, accessibility and functional testing.|
+| Hajra Tariq | University and General Knowledge question banks, profile management enhancements, profile renaming, name validation, score preservation, GK accuracy calculations, individual quiz performance reporting and testing. |
+
+## 11. GitHub Collaboration
+
+The project was developed using a shared GitHub repository, individual commits, feature branches and pull requests.
+
+| Branch | Purpose |
+|---|---|
+| `main` | Stable integrated application |
+| `integration` | Complete frontend baseline |
+| `feature/archive` | Archive functionality enhancements |
+| `feature/profile-gk` | Profile management and GK reporting |
+| `fix/final-polish` | Final card spacing and styling corrections |
+
+Feature implementations were reviewed and tested before merging into the main branch. Previous commits and individual contribution histories were preserved.
+
+## 12. Testing and Validation
+
+The following commands were used to verify the application:
+
+```bash
+npm run lint
+npx tsc --noEmit
+node scripts/check-data.cjs
+npm run build
+```
+
+### Verification Results
+
+| Test | Result |
+|---|---|
+| ESLint | Passed |
+| TypeScript compilation | Passed |
+| Quiz data validation | Passed |
+| Production build | Passed |
+| Dynamic routing and invalid routes | Passed |
+| Search, sorting and category filtering | Passed |
+| Bookmark persistence | Passed |
+| Profile creation and validation | Passed |
+| Profile renaming | Passed |
+| Personal score preservation | Passed |
+| GK performance calculations | Passed |
+| Education timer and scoring | Passed |
+| Responsive layouts | Passed |
+| Combined feature integration | Passed |
+
+## 13. Repository and Demonstration
+
+GitHub Repository: https://github.com/i242100-jpg/WEB_PROJ
+Vercel Deployement Link: https://web-proj-rho.vercel.app/
+
+## 14. AI Tool Usage
+
+ChatGPT was used throughout the development process to assist with:
+
+- Frontend prototyping and interface design.
+- SVG scenery and visual concepts.
+- React and TypeScript implementation.
+- Quiz logic and structured data.
+- Profile management and score reporting.
+- Debugging and responsive styling.
+- Code review and testing guidance.
+- GitHub collaboration and documentation.
+
+The project involved AI-assisted development, manual testing, implementation review and integration by the group members.
+
+## 15. Asset Credits
+
+The passage illustration incorporates traced storyboard artwork from Kurzgesagt's [We Finally Know More About Humanity's First Civilization](https://www.youtube.com/watch?v=_y9JuojAIg0).
+
+Photographic source and license information is available in:
+
+`public/snapshots/credits.txt`
+
+## 16. Limitations
+
+- Profiles are local browser profiles, not authenticated accounts.
+- Scores and bookmarks are not synchronized across devices.
+- Only the latest completed attempt for each scored quiz is retained.
+- Quiz content is based on frontend mock data.
+- Clearing browser storage removes locally saved information.
+
+---
+
+**Quiz Atlas | Explore. Discover. Learn.**
